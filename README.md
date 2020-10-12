@@ -6,4 +6,4 @@ Members:
 Peker Celik peker.celik@ozu.edu.tr
 Egemen Iscan
 Hasan Bilgin
-Yamac Demirkan
+Yamac Demirkan Yilmaz
