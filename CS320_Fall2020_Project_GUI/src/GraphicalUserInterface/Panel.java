@@ -5,7 +5,7 @@ import javax.swing.*;
 // Yamaç Demirkan Yılmaz -> v0.1
 // Contains the implementation of Panel class in Graphical User Interface package.
 
-public class Panel {
+public class Panel implements GraphicalUserInterface {
     private ArrayList<JPanel> panels = new ArrayList<JPanel>();
 
     public void initializePanels() {
@@ -62,5 +62,10 @@ public class Panel {
 
     public ArrayList<JPanel> getPanels() {
         return panels;
+    }
+
+    @Override
+    public void add(JComponent component) {
+        panels.add((JPanel) component);
     }
 }
