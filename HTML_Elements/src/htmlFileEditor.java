@@ -17,6 +17,10 @@ public class htmlFileEditor {
         fileContent = newString.toString();
     }
 
+    public static void removeElement(Element element) {
+        fileContent = fileContent.replace(element.getText(), "");
+    }
+
     public static void changeOrder(Element element1, Element element2) {
         if (fileContent.indexOf(element1.getText()) > fileContent.indexOf(element2.getText())) {
             fileContent = fileContent.replace(element1.getText(), element2.getText());
@@ -28,13 +32,13 @@ public class htmlFileEditor {
     }
 
     public static void main(String[] args) {
-        System.out.println(fileContent);
-        pElement p1 = new pElement("hello world");
-        addElement(p1);
-        pElement p2 = new pElement("hiho");
-        addElement(p2);
-        System.out.println(fileContent);
-        changeOrder(p1, p2);
+        imgElement img1 = new imgElement("http://cafefernando.com/images/brownie1.jpg");
+        addElement(img1);
+        imgElement img2 = new imgElement();
+        addElement(img2);
+        imgElement img3 = new imgElement("http://cafefernando.com/images/brownie1.jpg", 50, 50);
+        addElement(img3);
+        changeOrder(img1, img3);
         System.out.println(fileContent);
     }
 }
