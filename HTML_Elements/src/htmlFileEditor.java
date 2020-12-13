@@ -32,13 +32,13 @@ public class htmlFileEditor {
     }
 
     public static void main(String[] args) {
-        imgElement img1 = new imgElement("http://cafefernando.com/images/brownie1.jpg");
-        addElement(img1);
-        imgElement img2 = new imgElement();
-        addElement(img2);
-        imgElement img3 = new imgElement("http://cafefernando.com/images/brownie1.jpg", 50, 50);
-        addElement(img3);
-        changeOrder(img1, img3);
+        labelElement l1 = new labelElement("hello");
+        addElement(l1);
+        labelElement l2 = new labelElement();
+        addElement(l2);
+        labelElement l3 = new labelElement("hello", "parag");
+        addElement(l3);
+        changeOrder(l1, l3);
         System.out.println(fileContent);
     }
 }
