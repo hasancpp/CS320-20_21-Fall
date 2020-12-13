@@ -1,3 +1,5 @@
+import javax.swing.filechooser.FileSystemView;
+import java.io.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -12,7 +14,7 @@ public class htmlFileEditor {
 
     public static void addElement(Element element) {
         int index = fileContent.indexOf("</body>");
-        StringBuffer newString = new StringBuffer(fileContent);
+        StringBuilder newString = new StringBuilder(fileContent);
         newString.insert(index, element.getText());
         fileContent = newString.toString();
     }
@@ -31,14 +33,42 @@ public class htmlFileEditor {
         }
     }
 
+    public static void create() {
+        String path = FileSystemView.getFileSystemView().getHomeDirectory().getAbsolutePath() + "\\JWPLfile";
+        int index = 0;
+        File f;
+        do {
+            f = new File(path + index++ + ".html");
+        } while (f.exists());
+        BufferedWriter bw;
+        try {
+            bw = new BufferedWriter(new FileWriter(f));
+            bw.write(fileContent);
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void create(String path) {
+        path += "\\JWPLfile";
+        int index = 0;
+        File f;
+        do {
+            f = new File(path + index++ + ".html");
+        } while (f.exists());
+        BufferedWriter bw ;
+        try {
+            bw = new BufferedWriter(new FileWriter(f));
+            bw.write(fileContent);
+            bw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
-        labelElement l1 = new labelElement("hello");
-        addElement(l1);
-        labelElement l2 = new labelElement();
-        addElement(l2);
-        labelElement l3 = new labelElement("hello", "parag");
-        addElement(l3);
-        changeOrder(l1, l3);
-        System.out.println(fileContent);
+        addElement(new pElement("Hello World"));
+        create();
     }
 }
