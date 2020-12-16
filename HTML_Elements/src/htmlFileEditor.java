@@ -68,7 +68,11 @@ public class htmlFileEditor {
     }
 
     public static void main(String[] args) {
-        addElement(new pElement("Hello World"));
-        create();
+        addElement(new buttonElement());
+        addElement(new buttonElement("click here"));
+        addElement(new buttonElement("click here", false, false));
+        addElement(new buttonElement("click here", true, true));
+        addElement(new buttonElement("click here", "submit", true, false));
+        System.out.println(fileContent);
     }
 }
