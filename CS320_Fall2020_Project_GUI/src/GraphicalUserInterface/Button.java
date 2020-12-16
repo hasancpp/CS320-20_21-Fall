@@ -3,6 +3,7 @@ import java.util.HashMap;
 import javax.swing.*;
 
 // Yamaç Demirkan Yılmaz -> v0.1
+//Nebi Peker Celik && Yamaç Demirkan Yılmaz -> v0.2
 // Contains the implementation of Button class in Graphical User Interface package.
 
 public class Button implements GraphicalUserInterface {
