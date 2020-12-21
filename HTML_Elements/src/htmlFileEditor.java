@@ -1,5 +1,10 @@
 import javax.swing.filechooser.FileSystemView;
+
+
+
 import java.io.*;
+import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -68,11 +73,14 @@ public class htmlFileEditor {
     }
 
     public static void main(String[] args) {
+    
         addElement(new buttonElement());
         addElement(new buttonElement("click here"));
         addElement(new buttonElement("click here", false, false));
         addElement(new buttonElement("click here", true, true));
-        addElement(new buttonElement("click here", "submit", true, false));
+        addElement(new buttonElement("click here", "submit", true, false));    
+        
         System.out.println(fileContent);
+        
     }
 }
