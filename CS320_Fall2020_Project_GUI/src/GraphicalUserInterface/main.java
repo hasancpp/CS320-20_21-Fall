@@ -24,6 +24,7 @@ public class main {
         for(Map.Entry<String, JButton> set : mybuttons.getButtonHashMap().entrySet()) {
             buttonpanel.add(set.getValue());
         }
+        buttonpanel.add( new JButton("Create"));
         myframe.getFrame().add(buttonpanel, BorderLayout.EAST);
 
         
