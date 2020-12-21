@@ -1,6 +1,7 @@
 package GraphicalUserInterface;
 import java.awt.*;
 
+
 import javax.swing.*;
 
 // Yamaç Demirkan Yılmaz -> v0.1
@@ -13,8 +14,8 @@ public class Frame extends JFrame implements GraphicalUserInterface {
 
     public Frame() {
         frame = new JFrame("JWPL Software");
+        frame.setSize(1000, 700);
         frame.setLayout(new BorderLayout());
-        frame.setSize(1200, 700);
         frame.setLocationByPlatform(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }

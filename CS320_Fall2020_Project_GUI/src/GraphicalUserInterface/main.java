@@ -9,6 +9,8 @@ public class main {
     public static void main(String[] args) {
         Frame myframe = new Frame();
         JPanel toppanel = new JPanel();
+        toppanel.setSize(300, 30);
+        toppanel.add(new JTextField("Path"));
         myframe.getFrame().add(toppanel, BorderLayout.NORTH);
         JPanel centerpanel = new JPanel();
         myframe.getFrame().add(centerpanel, BorderLayout.CENTER);
@@ -23,7 +25,7 @@ public class main {
         }
         myframe.getFrame().add(buttonpanel, BorderLayout.EAST);
 
-        myframe.getFrame().pack();
+        
         myframe.getFrame().setVisible(true);
     }
 
