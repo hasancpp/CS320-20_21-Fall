@@ -62,6 +62,8 @@ public class Panel implements GraphicalUserInterface {
             olElementPanel.add(new JTextField("item"));
         }
         panels.add(olElementPanel);
+        
+        
     }
 
     public ArrayList<JPanel> getPanels() {
