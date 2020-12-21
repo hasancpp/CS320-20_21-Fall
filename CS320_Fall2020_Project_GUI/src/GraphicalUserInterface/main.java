@@ -16,6 +16,8 @@ public class main {
         JPanel centerpanel = new JPanel();
         myframe.getFrame().add(centerpanel, BorderLayout.CENTER);
         JPanel bottompanel = new JPanel();
+        bottompanel.setLayout(new BorderLayout());
+        bottompanel.add( new JButton("Create"),BorderLayout.EAST);
         myframe.getFrame().add(bottompanel, BorderLayout.SOUTH);
         JPanel buttonpanel = new JPanel();
         buttonpanel.setLayout(new GridLayout(10,1));
@@ -24,7 +26,7 @@ public class main {
         for(Map.Entry<String, JButton> set : mybuttons.getButtonHashMap().entrySet()) {
             buttonpanel.add(set.getValue());
         }
-        buttonpanel.add( new JButton("Create"));
+        
         myframe.getFrame().add(buttonpanel, BorderLayout.EAST);
 
         
