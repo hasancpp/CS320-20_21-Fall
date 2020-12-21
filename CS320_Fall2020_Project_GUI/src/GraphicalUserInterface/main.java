@@ -17,6 +17,7 @@ public class main {
         myframe.getFrame().add(centerpanel, BorderLayout.CENTER);
         JPanel bottompanel = new JPanel();
         bottompanel.setLayout(new BorderLayout());
+        bottompanel.setPreferredSize(new Dimension(100,75));
         bottompanel.add( new JButton("Create"),BorderLayout.EAST);
         myframe.getFrame().add(bottompanel, BorderLayout.SOUTH);
         JPanel buttonpanel = new JPanel();
