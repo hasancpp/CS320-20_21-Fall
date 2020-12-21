@@ -20,6 +20,7 @@ public class Button implements GraphicalUserInterface {
         buttonHashMap.put("h1ElementButton", new JButton("h1ElementButton"));
         buttonHashMap.put("ulElementButton", new JButton("ulElementButton"));
         buttonHashMap.put("olElementButton", new JButton("olElementButton"));
+        
     }
 
     public HashMap<String, JButton> getButtonHashMap() {
