@@ -1,5 +1,5 @@
 package GraphicalUserInterface;
-import java.awt.GridLayout;
+import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.*;
 
@@ -12,14 +12,14 @@ public class Panel implements GraphicalUserInterface {
 
     public void initializePanels() {
         JPanel imgElementPanel = new JPanel();
-        
+        imgElementPanel.add(new JLabel("imgElement"));
         imgElementPanel.add(new JTextField("src"));
         imgElementPanel.add(new JTextField("width"));
         imgElementPanel.add(new JTextField("height"));
+        imgElementPanel.add(new JButton(new ImageIcon("src/resources/upButton.png")));
         panels.add(imgElementPanel);
 
         JPanel inputElementPanel = new JPanel();
-        
         inputElementPanel.add(new JTextField("type"));
         inputElementPanel.add(new JTextField("value"));
         inputElementPanel.add(new JCheckBox("readonly"));

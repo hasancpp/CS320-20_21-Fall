@@ -1,5 +1,6 @@
 package GraphicalUserInterface;
 import java.awt.*;
+import java.io.IOException;
 import java.util.Map;
 
 
@@ -28,7 +29,13 @@ public class Frame extends JFrame implements GraphicalUserInterface {
         frame.add(topPanel, BorderLayout.NORTH);
 
         JPanel centerPanel = new JPanel();
+        centerPanel.setLayout(new GridLayout(9,1));
         setPanelColor(centerPanel);
+        Panel panels = new Panel();
+        panels.initializePanels();
+        for(JPanel panel : panels.getPanels()) {
+            centerPanel.add(panel);
+        }
         frame.add(centerPanel, BorderLayout.CENTER);
 
         JPanel bottomPanel = new JPanel();
