@@ -58,6 +58,9 @@ public class Frame extends JFrame implements GraphicalUserInterface {
         }
         frame.add(rightPanel, BorderLayout.EAST);
 
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        frame.setLocation(dim.width/2 - frame.getSize().width/2, dim.height/2 - frame.getSize().height/2);
+
         frame.setVisible(true);
     }
 
@@ -66,9 +69,7 @@ public class Frame extends JFrame implements GraphicalUserInterface {
     }
 
     @Override
-    public void add(JComponent component) {
-        // ???
-    }
+    public void add(JComponent component) {}
 
     public void editButton(JButton button) {
         button.setBackground(Color.decode("#839B97"));

@@ -3,6 +3,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.Border;
+import javax.swing.border.EmptyBorder;
 
 // Yamaç Demirkan Yılmaz -> v0.1
 //Nebi Peker Celik && Yamaç Demirkan Yılmaz -> v0.2
@@ -20,64 +21,6 @@ public class Panel implements GraphicalUserInterface {
     }
 
     public void initializePanels() {
-
-        JButton imgUpButton = new JButton();
-        JButton imgDownButton = new JButton();
-
-        JButton inputUpButton = new JButton();
-        JButton inputDownButton = new JButton();
-
-        JButton labelUpButton = new JButton();
-        JButton labelDownButton = new JButton();
-
-        JButton buttonUpButton = new JButton();
-        JButton buttonDownButton = new JButton();
-
-        JButton pUpButton = new JButton();
-        JButton pDownButton = new JButton();
-
-        JButton aUpButton = new JButton();
-        JButton aDownButton = new JButton();
-
-        JButton h1UpButton = new JButton();
-        JButton h1DownButton = new JButton();
-
-        JButton ulUpButton = new JButton();
-        JButton ulDownButton = new JButton();
-
-        JButton olUpButton = new JButton();
-        JButton olDownButton = new JButton();
-
-        JButton clearButton = new JButton();
-        clearButton.setIcon(new ImageIcon(new ImageIcon("src/resources/clear.jpg").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-
-        imgUpButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        imgDownButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-
-        inputUpButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        inputDownButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-
-        labelUpButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        labelDownButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-
-        buttonUpButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        buttonDownButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-
-        pUpButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        pDownButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-
-        aUpButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        aDownButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-
-        h1UpButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        h1DownButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-
-        ulUpButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        ulDownButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-
-        olUpButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        olDownButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-
         Border imgElementBorder = BorderFactory.createTitledBorder("imgElement");
         JPanel imgElementPanelBorder = new JPanel();
         LayoutManager imgElementLayout = new FlowLayout();
@@ -87,8 +30,7 @@ public class Panel implements GraphicalUserInterface {
         imgElementPanel.add(new JTextField("src"));
         imgElementPanel.add(new JTextField("width"));
         imgElementPanel.add(new JTextField("height"));
-        imgElementPanel.add(imgUpButton);
-        imgElementPanel.add(imgDownButton);
+        editPanel(imgElementPanel);
         imgElementPanel.setBorder(imgElementBorder);
         imgElementPanelBorder.add(imgElementPanel);
         panels.add(imgElementPanel);
@@ -104,8 +46,7 @@ public class Panel implements GraphicalUserInterface {
         inputElementPanel.add(new JCheckBox("readonly"));
         inputElementPanel.add(new JTextField("placeholder"));
         inputElementPanel.add(new JCheckBox("required"));
-        inputElementPanel.add(inputUpButton);
-        inputElementPanel.add(inputDownButton);
+        editPanel(inputElementPanel);
         inputElementPanel.setBorder(inputElementBorder);
         inputElementPanelBorder.add(inputElementPanel);
         panels.add(inputElementPanel);
@@ -118,8 +59,7 @@ public class Panel implements GraphicalUserInterface {
         JPanel labelElementPanel = new JPanel();
         labelElementPanel.add(new JTextField("forinput"));
         labelElementPanel.add(new JTextField("text"));
-        labelElementPanel.add(labelUpButton);
-        labelElementPanel.add(labelDownButton);
+        editPanel(labelElementPanel);
         labelElementPanel.setBorder(labelElementBorder);
         labelElementPanelBorder.add(labelElementPanel);
         panels.add(labelElementPanel);
@@ -134,8 +74,7 @@ public class Panel implements GraphicalUserInterface {
         buttonElementPanel.add(new JCheckBox("disabled"));
         buttonElementPanel.add(new JTextField("type"));
         buttonElementPanel.add(new JTextField("text"));
-        buttonElementPanel.add(buttonUpButton);
-        buttonElementPanel.add(buttonDownButton);
+        editPanel(buttonElementPanel);
         buttonElementPanel.setBorder(buttonElementBorder);
         buttonElementPanelBorder.add(buttonElementPanel);
         panels.add(buttonElementPanel);
@@ -147,8 +86,7 @@ public class Panel implements GraphicalUserInterface {
 
         JPanel pElementPanel = new JPanel();
         pElementPanel.add(new JTextField("text"));
-        pElementPanel.add(pUpButton);
-        pElementPanel.add(pDownButton);
+        editPanel(pElementPanel);
         pElementPanel.setBorder(pElementBorder);
         pElementPanelBorder.add(pElementPanel);
         panels.add(pElementPanel);
@@ -160,8 +98,7 @@ public class Panel implements GraphicalUserInterface {
 
         JPanel aElementPanel = new JPanel();        
         aElementPanel.add(new JTextField("href"));
-        aElementPanel.add(aUpButton);
-        aElementPanel.add(aDownButton);
+        editPanel(aElementPanel);
         aElementPanel.setBorder(aElementBorder);
         aElementPanelBorder.add(aElementPanel);
         panels.add(aElementPanel);
@@ -173,8 +110,7 @@ public class Panel implements GraphicalUserInterface {
 
         JPanel h1ElementPanel = new JPanel();       
         h1ElementPanel.add(new JTextField("text"));
-        h1ElementPanel.add(h1UpButton);
-        h1ElementPanel.add(h1DownButton);
+        editPanel(h1ElementPanel);
         h1ElementPanel.setBorder(h1ElementBorder);
         h1ElementPanelBorder.add(h1ElementPanel);
         panels.add(h1ElementPanel);
@@ -188,8 +124,7 @@ public class Panel implements GraphicalUserInterface {
         for(int i = 0; i < 10; i++) {
             ulElementPanel.add(new JTextField("item"));
         }
-        ulElementPanel.add(ulUpButton);
-        ulElementPanel.add(ulDownButton);
+        editPanel(ulElementPanel);
         ulElementPanel.setBorder(ulElementBorder);
         ulElementPanelBorder.add(ulElementPanel);
         panels.add(ulElementPanel);
@@ -203,17 +138,37 @@ public class Panel implements GraphicalUserInterface {
         for(int i = 0; i < 10; i++) {
             olElementPanel.add(new JTextField("item"));
         }
-        olElementPanel.add(olUpButton);
-        olElementPanel.add(olDownButton);
+        editPanel(olElementPanel);
         olElementPanel.setBorder(olElementBorder);
         olElementPanelBorder.add(olElementPanel);
         panels.add(olElementPanel);
-        
-        
     }
 
     public ArrayList<JPanel> getPanels() {
         return panels;
+    }
+
+    public void editPanel(JPanel panel) {
+        JButton upButton = new JButton();
+        editButton(upButton);
+        JButton downButton = new JButton();
+        editButton(downButton);
+        JButton removeButton = new JButton();
+        editButton(removeButton);
+        upButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        downButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        removeButton.setIcon(new ImageIcon(new ImageIcon("src/resources/remove.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        panel.add(upButton);
+        panel.add(downButton);
+        panel.add(removeButton);
+        panel.setBackground(Color.decode("#CFD3CE"));
+    }
+
+    public void editButton(JButton button) {
+        button.setFocusable(false);
+        button.setBackground(Color.decode("#839B97"));
+        button.setRolloverEnabled(true);
+        button.setBorderPainted(false);
     }
 
     @Override
