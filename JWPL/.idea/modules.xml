@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Button_Listeners/Button_Listeners.iml" filepath="$PROJECT_DIR$/Button_Listeners/Button_Listeners.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Graphical_User_Interface/Graphical_User_Interface.iml" filepath="$PROJECT_DIR$/Graphical_User_Interface/Graphical_User_Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HTML_Elements/HTML_Elements.iml" filepath="$PROJECT_DIR$/HTML_Elements/HTML_Elements.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JWPL.iml" filepath="$PROJECT_DIR$/JWPL.iml" />
+    </modules>
+  </component>
+</project>
