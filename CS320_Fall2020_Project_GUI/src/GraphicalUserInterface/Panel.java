@@ -3,7 +3,6 @@ import java.awt.*;
 import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.border.Border;
-import javax.swing.border.EmptyBorder;
 
 // Yamaç Demirkan Yılmaz -> v0.1
 //Nebi Peker Celik && Yamaç Demirkan Yılmaz -> v0.2
@@ -12,13 +11,7 @@ import javax.swing.border.EmptyBorder;
 
 
 public class Panel implements GraphicalUserInterface {
-    private ArrayList<JPanel> panels = new ArrayList<JPanel>();
-
-    private static Icon resizeIcon(ImageIcon icon, int resizedWidth, int resizedHeight) {
-        Image img = icon.getImage();
-        Image resizedImage = img.getScaledInstance(resizedWidth, resizedHeight,  java.awt.Image.SCALE_SMOOTH);
-        return new ImageIcon(resizedImage);
-    }
+    private ArrayList<JPanel> panels = new ArrayList<>();
 
     public void initializePanels() {
         Border imgElementBorder = BorderFactory.createTitledBorder("imgElement");
@@ -43,9 +36,9 @@ public class Panel implements GraphicalUserInterface {
         JPanel inputElementPanel = new JPanel();
         inputElementPanel.add(new JTextField("type"));
         inputElementPanel.add(new JTextField("value"));
-        inputElementPanel.add(new JCheckBox("readonly"));
+        inputElementPanel.add(editCheckBox(new JCheckBox("readonly")));
         inputElementPanel.add(new JTextField("placeholder"));
-        inputElementPanel.add(new JCheckBox("required"));
+        inputElementPanel.add(editCheckBox(new JCheckBox("required")));
         editPanel(inputElementPanel);
         inputElementPanel.setBorder(inputElementBorder);
         inputElementPanelBorder.add(inputElementPanel);
@@ -70,8 +63,8 @@ public class Panel implements GraphicalUserInterface {
         imgElementPanelBorder.setLayout(buttonElementLayout);
 
         JPanel buttonElementPanel = new JPanel();
-        buttonElementPanel.add(new JCheckBox("autofocus"));
-        buttonElementPanel.add(new JCheckBox("disabled"));
+        buttonElementPanel.add(editCheckBox(new JCheckBox("autofocus")));
+        buttonElementPanel.add(editCheckBox(new JCheckBox("disabled")));
         buttonElementPanel.add(new JTextField("type"));
         buttonElementPanel.add(new JTextField("text"));
         editPanel(buttonElementPanel);
@@ -155,9 +148,9 @@ public class Panel implements GraphicalUserInterface {
         editButton(downButton);
         JButton removeButton = new JButton();
         editButton(removeButton);
-        upButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        downButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
-        removeButton.setIcon(new ImageIcon(new ImageIcon("src/resources/remove.png").getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT)));
+        upButton.setIcon(new ImageIcon(new ImageIcon("src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
+        downButton.setIcon(new ImageIcon(new ImageIcon("src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
+        removeButton.setIcon(new ImageIcon(new ImageIcon("src/resources/remove.png").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
         panel.add(upButton);
         panel.add(downButton);
         panel.add(removeButton);
@@ -169,6 +162,11 @@ public class Panel implements GraphicalUserInterface {
         button.setBackground(Color.decode("#839B97"));
         button.setRolloverEnabled(true);
         button.setBorderPainted(false);
+    }
+
+    public JCheckBox editCheckBox(JCheckBox checkBox) {
+        checkBox.setFocusable(false);
+        return checkBox;
     }
 
     @Override
