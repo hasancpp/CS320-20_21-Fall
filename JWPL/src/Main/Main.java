@@ -1,3 +1,5 @@
+package Main;
+
 import GraphicalUserInterface.Frame;
 
 public class Main {

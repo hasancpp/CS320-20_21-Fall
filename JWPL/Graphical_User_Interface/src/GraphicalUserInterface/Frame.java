@@ -10,7 +10,8 @@ import java.util.Map;
 
 public class Frame extends JFrame implements GraphicalUserInterface {
 
-    private JFrame frame;
+    public static JFrame frame;
+    private static JPanel centerPanel = new JPanel();
 
     public Frame() {
         frame = new JFrame("JWPL Software");
@@ -26,14 +27,15 @@ public class Frame extends JFrame implements GraphicalUserInterface {
         topPanel.add(path);
         frame.add(topPanel, BorderLayout.NORTH);
 
-        JPanel centerPanel = new JPanel();
         centerPanel.setLayout(new GridLayout(9,1));
         setPanelColor(centerPanel);
         Panel panels = new Panel();
         panels.initializePanels();
-        for(JPanel panel : panels.getPanels()) {
-            centerPanel.add(panel);
+        /*
+        for(Map.Entry<String, JPanel> set : panels.getPanels().entrySet()) {
+            centerPanel.add(set.getValue());
         }
+        */
         frame.add(centerPanel, BorderLayout.CENTER);
 
         JPanel bottomPanel = new JPanel();
@@ -67,7 +69,13 @@ public class Frame extends JFrame implements GraphicalUserInterface {
     }
 
     @Override
-    public void add(JComponent component) {}
+    public void add(JComponent component) {
+    }
+
+    public static void addPanel(JPanel panel) {
+        centerPanel.add(panel);
+        centerPanel.revalidate();
+    }
 
     public void editButton(JButton button) {
         button.setBackground(Color.decode("#839B97"));

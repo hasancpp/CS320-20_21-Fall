@@ -1,5 +1,7 @@
 package GraphicalUserInterface;
+import ButtonListeners.elementButtonListener;
 import java.util.HashMap;
+import java.util.Map;
 import javax.swing.*;
 
 // Yamaç Demirkan Yılmaz -> v0.1
@@ -8,19 +10,20 @@ import javax.swing.*;
 
 public class Button implements GraphicalUserInterface {
 
-    private HashMap<String, JButton> buttonHashMap = new HashMap<String, JButton>();
+    private HashMap<String, JButton> buttonHashMap = new HashMap<>();
 
     public void initializeButton() {
-        buttonHashMap.put("imgElementButton", new JButton("imgElementButton"));
-        buttonHashMap.put("inputElementButton", new JButton("inputElementButton"));
-        buttonHashMap.put("labelElementButton", new JButton("labelElementButton"));
-        buttonHashMap.put("buttonElementButton", new JButton("buttonElementButton"));
-        buttonHashMap.put("aElementButton", new JButton("aElementButton"));
-        buttonHashMap.put("pElementButton", new JButton("pElementButton"));
-        buttonHashMap.put("h1ElementButton", new JButton("h1ElementButton"));
-        buttonHashMap.put("ulElementButton", new JButton("ulElementButton"));
-        buttonHashMap.put("olElementButton", new JButton("olElementButton"));
-        
+        buttonHashMap.put("imgElement", new JButton("imgElementButton"));
+        buttonHashMap.put("inputElement", new JButton("inputElementButton"));
+        buttonHashMap.put("labelElement", new JButton("labelElementButton"));
+        buttonHashMap.put("buttonElement", new JButton("buttonElementButton"));
+        buttonHashMap.put("aElement", new JButton("aElementButton"));
+        buttonHashMap.put("pElement", new JButton("pElementButton"));
+        buttonHashMap.put("h1Element", new JButton("h1ElementButton"));
+        buttonHashMap.put("ulElement", new JButton("ulElementButton"));
+        buttonHashMap.put("olElement", new JButton("olElementButton"));
+        for(Map.Entry<String, JButton> set : buttonHashMap.entrySet())
+            set.getValue().addActionListener(new elementButtonListener(set.getKey()));
     }
 
     public HashMap<String, JButton> getButtonHashMap() {

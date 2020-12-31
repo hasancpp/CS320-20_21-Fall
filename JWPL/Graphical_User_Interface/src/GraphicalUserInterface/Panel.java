@@ -1,6 +1,6 @@
 package GraphicalUserInterface;
 import java.awt.*;
-import java.util.ArrayList;
+import java.util.HashMap;
 import javax.swing.*;
 import javax.swing.border.Border;
 
@@ -11,7 +11,7 @@ import javax.swing.border.Border;
 
 
 public class Panel implements GraphicalUserInterface {
-    private ArrayList<JPanel> panels = new ArrayList<>();
+    public static HashMap<String, JPanel> panels = new HashMap<>();
 
     public void initializePanels() {
         Border imgElementBorder = BorderFactory.createTitledBorder("imgElement");
@@ -26,7 +26,7 @@ public class Panel implements GraphicalUserInterface {
         editPanel(imgElementPanel);
         imgElementPanel.setBorder(imgElementBorder);
         imgElementPanelBorder.add(imgElementPanel);
-        panels.add(imgElementPanel);
+        panels.put("imgElement", imgElementPanel);
 
         Border inputElementBorder = BorderFactory.createTitledBorder("inputElement");
         JPanel inputElementPanelBorder = new JPanel();
@@ -42,7 +42,7 @@ public class Panel implements GraphicalUserInterface {
         editPanel(inputElementPanel);
         inputElementPanel.setBorder(inputElementBorder);
         inputElementPanelBorder.add(inputElementPanel);
-        panels.add(inputElementPanel);
+        panels.put("inputElement", inputElementPanel);
 
         Border labelElementBorder = BorderFactory.createTitledBorder("labelElement");
         JPanel labelElementPanelBorder = new JPanel();
@@ -55,7 +55,7 @@ public class Panel implements GraphicalUserInterface {
         editPanel(labelElementPanel);
         labelElementPanel.setBorder(labelElementBorder);
         labelElementPanelBorder.add(labelElementPanel);
-        panels.add(labelElementPanel);
+        panels.put("labelElement", labelElementPanel);
 
         Border buttonElementBorder = BorderFactory.createTitledBorder("buttonElement");
         JPanel buttonElementPanelBorder = new JPanel();
@@ -70,7 +70,7 @@ public class Panel implements GraphicalUserInterface {
         editPanel(buttonElementPanel);
         buttonElementPanel.setBorder(buttonElementBorder);
         buttonElementPanelBorder.add(buttonElementPanel);
-        panels.add(buttonElementPanel);
+        panels.put("buttonElement", buttonElementPanel);
 
         Border pElementBorder = BorderFactory.createTitledBorder("pElement");
         JPanel pElementPanelBorder = new JPanel();
@@ -82,7 +82,7 @@ public class Panel implements GraphicalUserInterface {
         editPanel(pElementPanel);
         pElementPanel.setBorder(pElementBorder);
         pElementPanelBorder.add(pElementPanel);
-        panels.add(pElementPanel);
+        panels.put("pElement", pElementPanel);
 
         Border aElementBorder = BorderFactory.createTitledBorder("aElement");
         JPanel aElementPanelBorder = new JPanel();
@@ -94,7 +94,7 @@ public class Panel implements GraphicalUserInterface {
         editPanel(aElementPanel);
         aElementPanel.setBorder(aElementBorder);
         aElementPanelBorder.add(aElementPanel);
-        panels.add(aElementPanel);
+        panels.put("aElement", aElementPanel);
 
         Border h1ElementBorder = BorderFactory.createTitledBorder("h1Element");
         JPanel h1ElementPanelBorder = new JPanel();
@@ -106,7 +106,7 @@ public class Panel implements GraphicalUserInterface {
         editPanel(h1ElementPanel);
         h1ElementPanel.setBorder(h1ElementBorder);
         h1ElementPanelBorder.add(h1ElementPanel);
-        panels.add(h1ElementPanel);
+        panels.put("h1Element", h1ElementPanel);
 
         Border ulElementBorder = BorderFactory.createTitledBorder("ulElement");
         JPanel ulElementPanelBorder = new JPanel();
@@ -120,7 +120,7 @@ public class Panel implements GraphicalUserInterface {
         editPanel(ulElementPanel);
         ulElementPanel.setBorder(ulElementBorder);
         ulElementPanelBorder.add(ulElementPanel);
-        panels.add(ulElementPanel);
+        panels.put("ulElement", ulElementPanel);
 
         Border olElementBorder = BorderFactory.createTitledBorder("olElement");
         JPanel olElementPanelBorder = new JPanel();
@@ -134,10 +134,10 @@ public class Panel implements GraphicalUserInterface {
         editPanel(olElementPanel);
         olElementPanel.setBorder(olElementBorder);
         olElementPanelBorder.add(olElementPanel);
-        panels.add(olElementPanel);
+        panels.put("olElement", olElementPanel);
     }
 
-    public ArrayList<JPanel> getPanels() {
+    public HashMap<String, JPanel> getPanels() {
         return panels;
     }
 
@@ -171,6 +171,6 @@ public class Panel implements GraphicalUserInterface {
 
     @Override
     public void add(JComponent component) {
-        panels.add((JPanel) component);
+
     }
 }

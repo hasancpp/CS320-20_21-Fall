@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Graphical_User_Interface" />
+    <orderEntry type="module" module-name="JWPL" />
   </component>
 </module>
