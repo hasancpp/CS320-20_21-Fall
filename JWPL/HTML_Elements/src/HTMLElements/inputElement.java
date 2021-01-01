@@ -1,4 +1,4 @@
-
+package HTMLElements;
 
 public class inputElement implements Element {
 	private String text = "<input type=\"1\" placeholder=\"2\"><br>\n";
@@ -25,7 +25,6 @@ public class inputElement implements Element {
         setRequired(required);
     }
 
-	
     public void setReadonly(boolean readonly) {
         int index = text.indexOf(">");
         StringBuilder newString = new StringBuilder(text);

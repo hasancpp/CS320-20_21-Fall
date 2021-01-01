@@ -1,12 +1,10 @@
 package GraphicalUserInterface;
 
-import ButtonListeners.elementButtonListener;
-import ButtonListeners.clearButtonListener;
+import ButtonListeners.removeButtonListener;
 
 import java.awt.*;
-import java.awt.event.ComponentListener;
+import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 import javax.swing.*;
 import javax.swing.border.Border;
 
@@ -14,146 +12,40 @@ import javax.swing.border.Border;
 //Nebi Peker Celik && Yamaç Demirkan Yılmaz -> v0.2
 // Contains the implementation of Panel class in Graphical User Interface package.
 
-
-
 public class Panel implements GraphicalUserInterface {
-    public static HashMap<String, JPanel> panels = new HashMap<>();
+    public static HashMap<String, Integer> elementIndices = new HashMap<>() {{
+        put("imgElement", 0);
+        put("inputElement", 1);
+        put("labelElement", 2);
+        put("buttonElement", 3);
+        put("pElement", 4);
+        put("aElement", 5);
+        put("h1Element", 6);
+        put("ulElement", 7);
+        put("olElement", 8);
+    }};
+
+    public static ArrayList<ArrayList<JPanel>> panels = new ArrayList<>();
+
+    static {
+        for(int i = 0; i < elementIndices.size(); i++) {
+            panels.add(new ArrayList());
+        }
+    }
 
     public void initializePanels() {
-        Border imgElementBorder = BorderFactory.createTitledBorder("imgElement");
-        JPanel imgElementPanelBorder = new JPanel();
-        LayoutManager imgElementLayout = new FlowLayout();
-        imgElementPanelBorder.setLayout(imgElementLayout);
-
-        JPanel imgElementPanel = new JPanel();
-        imgElementPanel.add(new JTextField("src"));
-        imgElementPanel.add(new JTextField("width"));
-        imgElementPanel.add(new JTextField("height"));
-        editPanel(imgElementPanel);
-        imgElementPanel.setBorder(imgElementBorder);
-        imgElementPanelBorder.add(imgElementPanel);
-        panels.put("imgElement", imgElementPanel);
-
-        Border inputElementBorder = BorderFactory.createTitledBorder("inputElement");
-        JPanel inputElementPanelBorder = new JPanel();
-        LayoutManager inputElementLayout = new FlowLayout();
-        imgElementPanelBorder.setLayout(inputElementLayout);
-
-        JPanel inputElementPanel = new JPanel();
-        inputElementPanel.add(new JTextField("type"));
-        inputElementPanel.add(new JTextField("value"));
-        inputElementPanel.add(editCheckBox(new JCheckBox("readonly")));
-        inputElementPanel.add(new JTextField("placeholder"));
-        inputElementPanel.add(editCheckBox(new JCheckBox("required")));
-        editPanel(inputElementPanel);
-        inputElementPanel.setBorder(inputElementBorder);
-        inputElementPanelBorder.add(inputElementPanel);
-        panels.put("inputElement", inputElementPanel);
-
-        Border labelElementBorder = BorderFactory.createTitledBorder("labelElement");
-        JPanel labelElementPanelBorder = new JPanel();
-        LayoutManager labelElementLayout = new FlowLayout();
-        imgElementPanelBorder.setLayout(labelElementLayout);
-
-        JPanel labelElementPanel = new JPanel();
-        labelElementPanel.add(new JTextField("forinput"));
-        labelElementPanel.add(new JTextField("text"));
-        editPanel(labelElementPanel);
-        labelElementPanel.setBorder(labelElementBorder);
-        labelElementPanelBorder.add(labelElementPanel);
-        panels.put("labelElement", labelElementPanel);
-
-        Border buttonElementBorder = BorderFactory.createTitledBorder("buttonElement");
-        JPanel buttonElementPanelBorder = new JPanel();
-        LayoutManager buttonElementLayout = new FlowLayout();
-        imgElementPanelBorder.setLayout(buttonElementLayout);
-
-        JPanel buttonElementPanel = new JPanel();
-        buttonElementPanel.add(editCheckBox(new JCheckBox("autofocus")));
-        buttonElementPanel.add(editCheckBox(new JCheckBox("disabled")));
-        buttonElementPanel.add(new JTextField("type"));
-        buttonElementPanel.add(new JTextField("text"));
-        editPanel(buttonElementPanel);
-        buttonElementPanel.setBorder(buttonElementBorder);
-        buttonElementPanelBorder.add(buttonElementPanel);
-        panels.put("buttonElement", buttonElementPanel);
-
-        Border pElementBorder = BorderFactory.createTitledBorder("pElement");
-        JPanel pElementPanelBorder = new JPanel();
-        LayoutManager pElementLayout = new FlowLayout();
-        imgElementPanelBorder.setLayout(pElementLayout);
-
-        JPanel pElementPanel = new JPanel();
-        pElementPanel.add(new JTextField("text"));
-        editPanel(pElementPanel);
-        pElementPanel.setBorder(pElementBorder);
-        pElementPanelBorder.add(pElementPanel);
-        panels.put("pElement", pElementPanel);
-
-        Border aElementBorder = BorderFactory.createTitledBorder("aElement");
-        JPanel aElementPanelBorder = new JPanel();
-        LayoutManager aElementLayout = new FlowLayout();
-        imgElementPanelBorder.setLayout(aElementLayout);
-
-        JPanel aElementPanel = new JPanel();        
-        aElementPanel.add(new JTextField("href"));
-        editPanel(aElementPanel);
-        aElementPanel.setBorder(aElementBorder);
-        aElementPanelBorder.add(aElementPanel);
-        panels.put("aElement", aElementPanel);
-
-        Border h1ElementBorder = BorderFactory.createTitledBorder("h1Element");
-        JPanel h1ElementPanelBorder = new JPanel();
-        LayoutManager h1ElementLayout = new FlowLayout();
-        imgElementPanelBorder.setLayout(h1ElementLayout);
-
-        JPanel h1ElementPanel = new JPanel();       
-        h1ElementPanel.add(new JTextField("text"));
-        editPanel(h1ElementPanel);
-        h1ElementPanel.setBorder(h1ElementBorder);
-        h1ElementPanelBorder.add(h1ElementPanel);
-        panels.put("h1Element", h1ElementPanel);
-
-        Border ulElementBorder = BorderFactory.createTitledBorder("ulElement");
-        JPanel ulElementPanelBorder = new JPanel();
-        LayoutManager ulElementLayout = new FlowLayout();
-        imgElementPanelBorder.setLayout(ulElementLayout);
-        
-        JPanel ulElementPanel = new JPanel();
-        for(int i = 0; i < 10; i++) {
-            ulElementPanel.add(new JTextField("item"));
-        }
-        editPanel(ulElementPanel);
-        ulElementPanel.setBorder(ulElementBorder);
-        ulElementPanelBorder.add(ulElementPanel);
-        panels.put("ulElement", ulElementPanel);
-
-        Border olElementBorder = BorderFactory.createTitledBorder("olElement");
-        JPanel olElementPanelBorder = new JPanel();
-        LayoutManager olElementLayout = new FlowLayout();
-        imgElementPanelBorder.setLayout(olElementLayout);
-
-        JPanel olElementPanel = new JPanel();
-        for(int i = 0; i < 10; i++) {
-            olElementPanel.add(new JTextField("item"));
-        }
-        editPanel(olElementPanel);
-        olElementPanel.setBorder(olElementBorder);
-        olElementPanelBorder.add(olElementPanel);
-        panels.put("olElement", olElementPanel);
-
-        for(Map.Entry<String, JPanel> set : panels.entrySet()) { // For the remove button
-            Component[] components = set.getValue().getComponents();
-            JButton removeButton = (JButton) components[components.length-1];
-            removeButton.addActionListener(new clearButtonListener(set.getKey()));
-        }
+        panels.get(0).add(getElementPanel("imgElement"));
+        panels.get(1).add(getElementPanel("inputElement"));
+        panels.get(2).add(getElementPanel("labelElement"));
+        panels.get(3).add(getElementPanel("buttonElement"));
+        panels.get(4).add(getElementPanel("pElement"));
+        panels.get(5).add(getElementPanel("aElement"));
+        panels.get(6).add(getElementPanel("h1Element"));
+        panels.get(7).add(getElementPanel("ulElement"));
+        panels.get(8).add(getElementPanel("olElement"));
     }
 
-    public HashMap<String, JPanel> getPanels() {
-        return panels;
-    }
-
-    public void editPanel(JPanel panel) {
+    public static void editPanel(JPanel panel, String id) {
         JButton upButton = new JButton();
         editButton(upButton);
         JButton downButton = new JButton();
@@ -163,20 +55,21 @@ public class Panel implements GraphicalUserInterface {
         upButton.setIcon(new ImageIcon(new ImageIcon("Graphical_User_Interface/src/resources/upButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
         downButton.setIcon(new ImageIcon(new ImageIcon("Graphical_User_Interface/src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
         removeButton.setIcon(new ImageIcon(new ImageIcon("Graphical_User_Interface/src/resources/remove.png").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
+        removeButton.addActionListener(new removeButtonListener(id, panels.get(Panel.elementIndices.get(id)).size()));
         panel.add(upButton);
         panel.add(downButton);
         panel.add(removeButton);
         panel.setBackground(Color.decode("#CFD3CE"));
     }
 
-    public void editButton(JButton button) {
+    public static void editButton(JButton button) {
         button.setFocusable(false);
         button.setBackground(Color.decode("#839B97"));
         button.setRolloverEnabled(true);
         button.setBorderPainted(false);
     }
 
-    public JCheckBox editCheckBox(JCheckBox checkBox) {
+    public static JCheckBox editCheckBox(JCheckBox checkBox) {
         checkBox.setFocusable(false);
         return checkBox;
     }
@@ -184,5 +77,134 @@ public class Panel implements GraphicalUserInterface {
     @Override
     public void add(JComponent component) {
 
+    }
+
+    public static JPanel getElementPanel(String id) {
+        switch (id) {
+            case "imgElement":
+                Border imgElementBorder = BorderFactory.createTitledBorder("imgElement");
+                JPanel imgElementPanelBorder = new JPanel();
+                LayoutManager imgElementLayout = new FlowLayout();
+                imgElementPanelBorder.setLayout(imgElementLayout);
+
+                JPanel imgElementPanel = new JPanel();
+                imgElementPanel.add(new JTextField("src"));
+                imgElementPanel.add(new JTextField("width"));
+                imgElementPanel.add(new JTextField("height"));
+                editPanel(imgElementPanel, "imgElement");
+                imgElementPanel.setBorder(imgElementBorder);
+                imgElementPanelBorder.add(imgElementPanel);
+                return imgElementPanel;
+            case "inputElement":
+                Border inputElementBorder = BorderFactory.createTitledBorder("inputElement");
+                JPanel inputElementPanelBorder = new JPanel();
+                LayoutManager inputElementLayout = new FlowLayout();
+                inputElementPanelBorder.setLayout(inputElementLayout);
+
+                JPanel inputElementPanel = new JPanel();
+                inputElementPanel.add(new JTextField("type"));
+                inputElementPanel.add(new JTextField("value"));
+                inputElementPanel.add(editCheckBox(new JCheckBox("readonly")));
+                inputElementPanel.add(new JTextField("placeholder"));
+                inputElementPanel.add(editCheckBox(new JCheckBox("required")));
+                editPanel(inputElementPanel, "inputElement");
+                inputElementPanel.setBorder(inputElementBorder);
+                inputElementPanelBorder.add(inputElementPanel);
+                return inputElementPanel;
+            case "labelElement":
+                Border labelElementBorder = BorderFactory.createTitledBorder("labelElement");
+                JPanel labelElementPanelBorder = new JPanel();
+                LayoutManager labelElementLayout = new FlowLayout();
+                labelElementPanelBorder.setLayout(labelElementLayout);
+
+                JPanel labelElementPanel = new JPanel();
+                labelElementPanel.add(new JTextField("forinput"));
+                labelElementPanel.add(new JTextField("text"));
+                editPanel(labelElementPanel, "labelElement");
+                labelElementPanel.setBorder(labelElementBorder);
+                labelElementPanelBorder.add(labelElementPanel);
+                return labelElementPanel;
+            case "buttonElement":
+                Border buttonElementBorder = BorderFactory.createTitledBorder("buttonElement");
+                JPanel buttonElementPanelBorder = new JPanel();
+                LayoutManager buttonElementLayout = new FlowLayout();
+                buttonElementPanelBorder.setLayout(buttonElementLayout);
+
+                JPanel buttonElementPanel = new JPanel();
+                buttonElementPanel.add(editCheckBox(new JCheckBox("autofocus")));
+                buttonElementPanel.add(editCheckBox(new JCheckBox("disabled")));
+                buttonElementPanel.add(new JTextField("type"));
+                buttonElementPanel.add(new JTextField("text"));
+                editPanel(buttonElementPanel, "buttonElement");
+                buttonElementPanel.setBorder(buttonElementBorder);
+                buttonElementPanelBorder.add(buttonElementPanel);
+                return buttonElementPanel;
+            case "pElement":
+                Border pElementBorder = BorderFactory.createTitledBorder("pElement");
+                JPanel pElementPanelBorder = new JPanel();
+                LayoutManager pElementLayout = new FlowLayout();
+                pElementPanelBorder.setLayout(pElementLayout);
+
+                JPanel pElementPanel = new JPanel();
+                pElementPanel.add(new JTextField("text"));
+                editPanel(pElementPanel, "pElement");
+                pElementPanel.setBorder(pElementBorder);
+                pElementPanelBorder.add(pElementPanel);
+                return pElementPanel;
+            case "aElement":
+                Border aElementBorder = BorderFactory.createTitledBorder("aElement");
+                JPanel aElementPanelBorder = new JPanel();
+                LayoutManager aElementLayout = new FlowLayout();
+                aElementPanelBorder.setLayout(aElementLayout);
+
+                JPanel aElementPanel = new JPanel();
+                aElementPanel.add(new JTextField("href"));
+                editPanel(aElementPanel, "aElement");
+                aElementPanel.setBorder(aElementBorder);
+                aElementPanelBorder.add(aElementPanel);
+                return aElementPanel;
+            case "h1Element":
+                Border h1ElementBorder = BorderFactory.createTitledBorder("h1Element");
+                JPanel h1ElementPanelBorder = new JPanel();
+                LayoutManager h1ElementLayout = new FlowLayout();
+                h1ElementPanelBorder.setLayout(h1ElementLayout);
+
+                JPanel h1ElementPanel = new JPanel();
+                h1ElementPanel.add(new JTextField("text"));
+                editPanel(h1ElementPanel, "h1Element");
+                h1ElementPanel.setBorder(h1ElementBorder);
+                h1ElementPanelBorder.add(h1ElementPanel);
+                return h1ElementPanel;
+            case "ulElement":
+                Border ulElementBorder = BorderFactory.createTitledBorder("ulElement");
+                JPanel ulElementPanelBorder = new JPanel();
+                LayoutManager ulElementLayout = new FlowLayout();
+                ulElementPanelBorder.setLayout(ulElementLayout);
+
+                JPanel ulElementPanel = new JPanel();
+                for(int i = 0; i < 10; i++) {
+                    ulElementPanel.add(new JTextField("item"));
+                }
+                editPanel(ulElementPanel, "ulElement");
+                ulElementPanel.setBorder(ulElementBorder);
+                ulElementPanelBorder.add(ulElementPanel);
+                return ulElementPanel;
+            case "olElement":
+                Border olElementBorder = BorderFactory.createTitledBorder("olElement");
+                JPanel olElementPanelBorder = new JPanel();
+                LayoutManager olElementLayout = new FlowLayout();
+                olElementPanelBorder.setLayout(olElementLayout);
+
+                JPanel olElementPanel = new JPanel();
+                for(int i = 0; i < 10; i++) {
+                    olElementPanel.add(new JTextField("item"));
+                }
+                editPanel(olElementPanel, "olElement");
+                olElementPanel.setBorder(olElementBorder);
+                olElementPanelBorder.add(olElementPanel);
+                return olElementPanel;
+            default:
+                return null;
+        }
     }
 }

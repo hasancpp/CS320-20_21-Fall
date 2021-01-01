@@ -1,10 +1,10 @@
+package HTMLElements;
+
 import javax.swing.filechooser.FileSystemView;
 
 
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

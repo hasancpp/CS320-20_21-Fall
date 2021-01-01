@@ -1,3 +1,5 @@
+package HTMLElements;
+
 public class imgElement implements Element {
     private String text = "<img src=\"1\" width=\"2px\" height=\"3px\"><br>\n";
 

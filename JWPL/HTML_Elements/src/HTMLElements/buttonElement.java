@@ -1,3 +1,5 @@
+package HTMLElements;
+
 public class buttonElement implements Element {
     private String text = "<button type=\"2\">1</button><br>\n";
 

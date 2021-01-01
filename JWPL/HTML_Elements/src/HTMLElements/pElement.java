@@ -1,12 +1,14 @@
-public class h1Element implements Element {
-    private String text = "<h1>2</h1><br>\n";
+package HTMLElements;
+
+public class pElement implements Element {
+    private String text = "<p>1</p><br>\n";
 
     //constructors
-    public h1Element() {
+    public pElement() {
         setText("&nbsp");
     }
 
-    public h1Element(String text) {
+    public pElement(String text) {
         setText(text);
     }
 
@@ -17,6 +19,6 @@ public class h1Element implements Element {
     }
 
     public void setText(String text) {
-        this.text = this.text.replace("2", text);
+        this.text = this.text.replace("1", text);
     }
 }

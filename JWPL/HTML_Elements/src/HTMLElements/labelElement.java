@@ -1,3 +1,5 @@
+package HTMLElements;
+
 public class labelElement implements Element {
     private String text = "<label for=\"2\">1</label><br>\n";
 

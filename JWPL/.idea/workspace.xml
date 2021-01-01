@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Button_Listeners/src/ButtonListeners/clearButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Button_Listeners/src/ButtonListeners/removeButtonListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Button_Listeners/src/ButtonListeners/elementButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Button_Listeners/src/ButtonListeners/elementButtonListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Panel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/aElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/aElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/buttonElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/buttonElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/h1Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/h1Element.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/htmlFileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/htmlFileEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/imgElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/imgElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/inputElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/inputElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/labelElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/labelElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/olElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/olElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/pElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/pElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/ulElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/ulElement.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\HP\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\202.7319.50\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mO4xfhG5yuwkXvZphpDSsY5mrr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+      <module name="JWPL" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="" />
+      <created>1609351554562</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609351554562</updated>
+    </task>
+    <task id="LOCAL-00001" summary="added all packages to a single project as modules">
+      <created>1609352298243</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609352298243</updated>
+    </task>
+    <task id="LOCAL-00002" summary="adds panel whenever the corresponding button is clicked">
+      <created>1609429527145</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609429527145</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added all packages to a single project as modules" />
+    <MESSAGE value="adds panel whenever the corresponding button is clicked" />
+    <option name="LAST_COMMIT_MESSAGE" value="adds panel whenever the corresponding button is clicked" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1609513917122">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1609513917122" />
+    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609513796294">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1609513796294" />
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1609426852583">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1609426852583" />
+    <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1609424872643">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1609424872643" />
+    <state x="76" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1609513771467">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="76" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1609513771467" />
+    <state x="599" y="106" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1609424146151">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="599" y="106" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1609424146151" />
+    <state x="474" y="264" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1609425002808">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="474" y="264" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1609425002808" />
+    <state x="564" y="307" key="DetectedRootsChooserDialog" timestamp="1609424122640">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="564" y="307" key="DetectedRootsChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1609424122640" />
+    <state x="473" y="153" key="FileChooserDialogImpl" timestamp="1609513913449">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="473" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609513913449" />
+    <state width="1493" height="125" key="GridCell.Tab.0.bottom" timestamp="1609521263624">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="125" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609521263624" />
+    <state width="1493" height="125" key="GridCell.Tab.0.center" timestamp="1609521263624">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="125" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609521263624" />
+    <state width="1493" height="125" key="GridCell.Tab.0.left" timestamp="1609521263623">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="125" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609521263623" />
+    <state width="1493" height="125" key="GridCell.Tab.0.right" timestamp="1609521263624">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="125" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609521263624" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1609513842098">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609513842098" />
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1609429530995">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609429530995" />
+    <state x="209" y="32" key="new project wizard" timestamp="1609513639796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="32" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1609513639796" />
+  </component>
+</project>
