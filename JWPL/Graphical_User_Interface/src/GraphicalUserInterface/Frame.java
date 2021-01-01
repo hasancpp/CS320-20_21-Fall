@@ -100,6 +100,17 @@ public class Frame extends JFrame implements GraphicalUserInterface {
     	     centerPanel.repaint();
     	 } 
     }
+    //
+    public static void swapDown(JPanel panel) {
+   	 int index = centerPanel.getComponentZOrder(panel);
+   	 if(index < centerPanel.getComponentCount()-1) {
+   		 Component lower = centerPanel.getComponent(index+1);
+   		 centerPanel.setComponentZOrder(lower, index);
+   		 centerPanel.setComponentZOrder(panel, index+1);
+   		 centerPanel.revalidate();
+   	     centerPanel.repaint();
+   	 } 
+   }
 
     public void setPanelColor(JPanel panel) {
         panel.setBackground(Color.decode("#C6B497"));

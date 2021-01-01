@@ -18,8 +18,8 @@ public class downButtonListener implements ActionListener {
 	 }
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		 //Functionality should be added*********************
+		
+		Frame.swapDown(Panel.panels.get(Panel.elementIndices.get(id)).get(0));
 	}
 
 }
