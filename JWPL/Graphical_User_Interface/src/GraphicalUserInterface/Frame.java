@@ -68,6 +68,8 @@ public class Frame extends JFrame implements GraphicalUserInterface {
         return frame;
     }
 
+    public JPanel getCenterPanel() { return centerPanel; }
+
     @Override
     public void add(JComponent component) {
     }
@@ -75,6 +77,12 @@ public class Frame extends JFrame implements GraphicalUserInterface {
     public static void addPanel(JPanel panel) {
         centerPanel.add(panel);
         centerPanel.revalidate();
+    }
+
+    public static void removePanel(JPanel panel) {
+        centerPanel.remove(panel);
+        centerPanel.revalidate();
+        centerPanel.repaint();
     }
 
     public void editButton(JButton button) {

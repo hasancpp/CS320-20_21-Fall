@@ -1,6 +1,12 @@
 package GraphicalUserInterface;
+
+import ButtonListeners.elementButtonListener;
+import ButtonListeners.clearButtonListener;
+
 import java.awt.*;
+import java.awt.event.ComponentListener;
 import java.util.HashMap;
+import java.util.Map;
 import javax.swing.*;
 import javax.swing.border.Border;
 
@@ -135,6 +141,12 @@ public class Panel implements GraphicalUserInterface {
         olElementPanel.setBorder(olElementBorder);
         olElementPanelBorder.add(olElementPanel);
         panels.put("olElement", olElementPanel);
+
+        for(Map.Entry<String, JPanel> set : panels.entrySet()) { // For the remove button
+            Component[] components = set.getValue().getComponents();
+            JButton removeButton = (JButton) components[components.length-1];
+            removeButton.addActionListener(new clearButtonListener(set.getKey()));
+        }
     }
 
     public HashMap<String, JPanel> getPanels() {
