@@ -20,6 +20,10 @@ public class upButtonListener implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		 //Functionality should be added*********************
+		
+		Frame.swapUp(Panel.panels.get(Panel.elementIndices.get(id)).get(0));
+        
+        
 	}
 
 }

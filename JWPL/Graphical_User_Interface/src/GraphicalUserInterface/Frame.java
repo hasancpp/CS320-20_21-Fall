@@ -72,6 +72,7 @@ public class Frame extends JFrame implements GraphicalUserInterface {
         centerPanel.add(panel);
         centerPanel.revalidate();
         centerPanel.repaint();
+        
     }
 
     public static void removePanel(JPanel panel) {
@@ -88,6 +89,16 @@ public class Frame extends JFrame implements GraphicalUserInterface {
         button.setRolloverEnabled(true);
         button.setBorderPainted(false);
         button.setFont(new Font("Roboto", Font.BOLD, 12));
+    }
+    public static void swapUp(JPanel panel) {
+    	 int index = centerPanel.getComponentZOrder(panel);
+    	 if(index>0) {
+    		 Component upper = centerPanel.getComponent(index-1);
+    		 centerPanel.setComponentZOrder(upper, index);
+    		 centerPanel.setComponentZOrder(panel, index-1);
+    		 centerPanel.revalidate();
+    	     centerPanel.repaint();
+    	 } 
     }
 
     public void setPanelColor(JPanel panel) {
