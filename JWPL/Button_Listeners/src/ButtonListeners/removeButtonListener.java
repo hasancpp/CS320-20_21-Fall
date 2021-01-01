@@ -19,5 +19,6 @@ public class removeButtonListener implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         Frame.removePanel(Panel.panels.get(Panel.elementIndices.get(id)).get(index));
+        
     }
 }

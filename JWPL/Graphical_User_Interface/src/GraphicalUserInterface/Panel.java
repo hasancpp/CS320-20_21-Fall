@@ -1,6 +1,8 @@
 package GraphicalUserInterface;
 
+import ButtonListeners.downButtonListener;
 import ButtonListeners.removeButtonListener;
+import ButtonListeners.upButtonListener;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -56,6 +58,8 @@ public class Panel implements GraphicalUserInterface {
         downButton.setIcon(new ImageIcon(new ImageIcon("Graphical_User_Interface/src/resources/downButton.png").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
         removeButton.setIcon(new ImageIcon(new ImageIcon("Graphical_User_Interface/src/resources/remove.png").getImage().getScaledInstance(20, 20, Image.SCALE_SMOOTH)));
         removeButton.addActionListener(new removeButtonListener(id, panels.get(Panel.elementIndices.get(id)).size()));
+        upButton.addActionListener(new upButtonListener(id, panels.get(Panel.elementIndices.get(id)).size()));
+        downButton.addActionListener(new downButtonListener(id, panels.get(Panel.elementIndices.get(id)).size()));
         panel.add(upButton);
         panel.add(downButton);
         panel.add(removeButton);
