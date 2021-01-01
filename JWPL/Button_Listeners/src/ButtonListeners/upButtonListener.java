@@ -21,7 +21,7 @@ public class upButtonListener implements ActionListener {
 		// TODO Auto-generated method stub
 		 //Functionality should be added*********************
 		
-		Frame.swapUp(Panel.panels.get(Panel.elementIndices.get(id)).get(0));
+		Frame.swapUp(Panel.panels.get(Panel.elementIndices.get(id)).get(index));
         
         
 	}
