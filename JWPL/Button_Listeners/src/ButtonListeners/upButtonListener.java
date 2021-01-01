@@ -19,7 +19,7 @@ public class upButtonListener implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-		Frame.swapUp(Panel.panels.get(Panel.elementIndices.get(id)).get(0));
+		Frame.swapUp(Panel.panels.get(Panel.elementIndices.get(id)).get(index));
         
         
 	}
