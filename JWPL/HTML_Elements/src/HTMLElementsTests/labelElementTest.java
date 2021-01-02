@@ -15,21 +15,24 @@ class labelElementTest {
     void setUp() {
         element = new labelElement();
     }
-	
+
+    @Test
 	void getText() {
 		assertTrue(element.getText().equals("<label for=\"2\">1</label><br>\n"));
 	}
-	
+
+	@Test
 	void setFor() {
 		element.setFor("test");
 		String str= element.getText();
-		assertTrue(element.getText().equals("<label for=test>1</label><br>\n"));
+		assertTrue(element.getText().equals("<label for=\"test\">1</label><br>\n"));
 	}
-	
+
+	@Test
 	void defaultFor() {
 		element.defaultFor();
 		String str= element.getText();
-		assertTrue(str.equals("<label>1</label><br>\n\""));
+		assertTrue(str.equals("<label>1</label><br>\n"));
 	}
 
 }

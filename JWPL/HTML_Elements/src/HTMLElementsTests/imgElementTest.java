@@ -39,9 +39,9 @@ class imgElementTest {
 
 	 @Test
 	 void setWidth() {
-		 element.setWidth("5px");
+		 element.setWidth("5");
 		 String str = element.getText();
-		 assertTrue(str.equals("<img width=5px height=\"3px\"><br>\n"));
+		 assertTrue(str.equals("<img src=\"1\" width=\"5px\" height=\"3px\"><br>\n"));
 		 
 	 }
 
@@ -49,15 +49,15 @@ class imgElementTest {
 	 void defaultWidth() {
 		element.defaultWidth(); 
 		String str = element.getText();
-		assertTrue(str.equals("<img height=\"3px\"><br>\n"));
+		assertTrue(str.equals("<img src=\"1\" height=\"3px\"><br>\n"));
 		 
 	 }
 	 
 	 @Test
 	 void setHeight() {
-		 element.setHeight("10px");
+		 element.setHeight("10");
 		 String str = element.getText();
-		 assertTrue(str.equals("<img width=\"2px\" height=10px ><br>\n"));
+		 assertTrue(str.equals("<img src=\"1\" width=\"2px\" height=\"10px\"><br>\n"));
 		 
 	 }
 
@@ -65,7 +65,7 @@ class imgElementTest {
 	 void defaultHeight() {
 		 element.defaultHeight(); 
 			String str = element.getText();
-			assertTrue(str.equals("<img width=\"2px\"><br>\n"));
+			assertTrue(str.equals("<img src=\"1\" width=\"2px\"><br>\n"));
 		 
 	 }
 	 
