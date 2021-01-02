@@ -1,7 +1,8 @@
-package HTMLElements;
+package HTMLElementsTests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import HTMLElements.inputElement;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 class inputElementTest {
@@ -15,21 +16,10 @@ class inputElementTest {
 	
 	@Test
 	void setReadonly() {
-		element.setReadonly(true);
-		String str = element.getText();
-		assertTrue(str.equals("<img width=\"2px\" height=\"3px\" readonly><br>\n"));
-		element.setReadonly(false);
-		str = element.getText();
-		assertTrue(str.equals("<img width=\"2px\" height=\"3px\"><br>\n"));
+		
 	}
 	
 	void setRequired() {
-		element.setRequired(true);
-		String str = element.getText();
-		assertTrue(str.equals("<img width=\"2px\" height=\"3px\" required><br>\n"));
-		element.setRequired(false);
-		str = element.getText();
-		assertTrue(str.equals("<img width=\"2px\" height=\"3px\"><br>\n"));
 		
 	}
 	

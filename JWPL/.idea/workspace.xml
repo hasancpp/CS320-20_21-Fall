@@ -74,14 +74,7 @@
       <recent name="HTMLElements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.aElementTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Main" />
-      <module name="JWPL" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.imgElementTest.setSrc">
     <configuration name="aElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
@@ -97,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aElementTest.getText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="buttonElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
@@ -106,14 +99,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.aElementTest" />
-      <option name="METHOD_NAME" value="getText" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.buttonElementTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="buttonElementTest.setAutoFocusFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HTMLElementsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.buttonElementTest" />
+      <option name="METHOD_NAME" value="setAutoFocusFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aElementTest.setHref" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="imgElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
@@ -122,14 +130,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.aElementTest" />
-      <option name="METHOD_NAME" value="setHref" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.imgElementTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aElementTest.setText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="imgElementTest.setSrc" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
@@ -138,8 +145,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.aElementTest" />
-      <option name="METHOD_NAME" value="setText" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.imgElementTest" />
+      <option name="METHOD_NAME" value="setSrc" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.imgElementTest.setSrc" />
+        <item itemvalue="JUnit.imgElementTest" />
+        <item itemvalue="JUnit.buttonElementTest" />
+        <item itemvalue="JUnit.buttonElementTest.setAutoFocusFalse" />
         <item itemvalue="JUnit.aElementTest" />
-        <item itemvalue="JUnit.aElementTest.getText" />
-        <item itemvalue="JUnit.aElementTest.setText" />
-        <item itemvalue="JUnit.aElementTest.setHref" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

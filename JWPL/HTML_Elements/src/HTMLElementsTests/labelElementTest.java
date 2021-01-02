@@ -1,7 +1,8 @@
-package HTMLElements;
+package HTMLElementsTests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import HTMLElements.labelElement;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
 

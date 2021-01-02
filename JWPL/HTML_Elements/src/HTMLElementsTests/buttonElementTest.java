@@ -14,6 +14,30 @@ class buttonElementTest {
     void setUp() {
         element = new buttonElement();
     }
+
+    @Test
+    void setAutoFocusTrue() {
+        element.setAutofocus(true);
+        assertEquals(element.getText(), "<button type=\"2\" autofocus>1</button><br>\n");
+    }
+
+    @Test
+    void setAutoFocusFalse() {
+        element.setAutofocus(false);
+        assertEquals(element.getText(), "<button type=\"2\">1</button><br>\n");
+    }
+
+    @Test
+    void setDisabledTrue() {
+        element.setDisabled(true);
+        assertEquals(element.getText(), "<button type=\"2\" disabled>1</button><br>\n");
+    }
+
+    @Test
+    void setDisabledFalse() {
+        element.setDisabled(false);
+        assertEquals(element.getText(), "<button type=\"2\">1</button><br>\n");
+    }
     
     @Test
     void setType() {
