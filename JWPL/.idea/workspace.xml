@@ -23,13 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/JWPL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JWPL.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_15_39__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_15_39__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_17_18__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_17_18__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/imgElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/imgElementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/inputElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/inputElementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/labelElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/labelElementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Frame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/HTML_Elements/src/HTMLElements" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -80,88 +78,89 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="GraphicalUserInterface" />
+      <recent name="ButtonListeners" />
+      <recent name="HTMLElements" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="HTMLElements" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.inputElementTest">
-    <configuration name="inputElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FrameTest">
+    <configuration name="ButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
+          <option name="PATTERN" value="GraphicalUserInterfaceTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
+      <option name="PACKAGE_NAME" value="GraphicalUserInterfaceTests" />
+      <option name="MAIN_CLASS_NAME" value="GraphicalUserInterfaceTests.ButtonTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="inputElementTest.setReadonly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ButtonTest.getButtonHashMap" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
+          <option name="PATTERN" value="GraphicalUserInterfaceTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="METHOD_NAME" value="setReadonly" />
+      <option name="PACKAGE_NAME" value="GraphicalUserInterfaceTests" />
+      <option name="MAIN_CLASS_NAME" value="GraphicalUserInterfaceTests.ButtonTest" />
+      <option name="METHOD_NAME" value="getButtonHashMap" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="inputElementTest.setRequired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FrameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
+          <option name="PATTERN" value="GraphicalUserInterfaceTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="METHOD_NAME" value="setRequired" />
+      <option name="PACKAGE_NAME" value="GraphicalUserInterfaceTests" />
+      <option name="MAIN_CLASS_NAME" value="GraphicalUserInterfaceTests.FrameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FrameTest.editButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GraphicalUserInterfaceTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GraphicalUserInterfaceTests" />
+      <option name="MAIN_CLASS_NAME" value="GraphicalUserInterfaceTests.FrameTest" />
+      <option name="METHOD_NAME" value="editButton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="inputElementTest.setRequiredFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FrameTest.setPanelColor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
+          <option name="PATTERN" value="GraphicalUserInterfaceTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="METHOD_NAME" value="setRequiredFalse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="inputElementTest.setRequiredTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JWPL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="METHOD_NAME" value="setRequiredTrue" />
+      <option name="PACKAGE_NAME" value="GraphicalUserInterfaceTests" />
+      <option name="MAIN_CLASS_NAME" value="GraphicalUserInterfaceTests.FrameTest" />
+      <option name="METHOD_NAME" value="setPanelColor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.inputElementTest" />
-        <item itemvalue="JUnit.inputElementTest.setRequiredFalse" />
-        <item itemvalue="JUnit.inputElementTest.setRequiredTrue" />
-        <item itemvalue="JUnit.inputElementTest.setRequired" />
-        <item itemvalue="JUnit.inputElementTest.setReadonly" />
+        <item itemvalue="JUnit.FrameTest" />
+        <item itemvalue="JUnit.FrameTest.editButton" />
+        <item itemvalue="JUnit.FrameTest.setPanelColor" />
+        <item itemvalue="JUnit.ButtonTest" />
+        <item itemvalue="JUnit.ButtonTest.getButtonHashMap" />
       </list>
     </recent_temporary>
   </component>
@@ -227,6 +226,44 @@
     <MESSAGE value="adds panel whenever the corresponding button is clicked" />
     <MESSAGE value="solved single element issue" />
     <option name="LAST_COMMIT_MESSAGE" value="solved single element issue" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="70" width="814" height="729" key="#Intentions" timestamp="1609608454387">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="70" width="814" height="729" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1609608454387" />
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1609609688778">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1536.824@0.0.1536.824" timestamp="1609609688778" />
+    <state width="1493" height="155" key="GridCell.Tab.0.bottom" timestamp="1609609615876">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="155" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609609615876" />
+    <state width="1493" height="155" key="GridCell.Tab.0.center" timestamp="1609609615875">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="155" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609609615875" />
+    <state width="1493" height="155" key="GridCell.Tab.0.left" timestamp="1609609615875">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="155" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609609615875" />
+    <state width="1493" height="155" key="GridCell.Tab.0.right" timestamp="1609609615876">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="155" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609609615876" />
+    <state x="584" y="190" key="chooseDestDirectoryDialog" timestamp="1609608599917">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1609608599917" />
+    <state x="540" y="234" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1609608599937">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="234" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1609608599937" />
+    <state x="469" y="169" key="refactoring.ChangeSignatureDialog" timestamp="1609607299442">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="469" y="169" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1609607299442" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

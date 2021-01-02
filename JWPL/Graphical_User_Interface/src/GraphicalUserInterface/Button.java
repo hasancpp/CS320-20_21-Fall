@@ -6,9 +6,9 @@ import javax.swing.*;
 
 public class Button {
 
-    private final HashMap<String, JButton> buttonHashMap = new HashMap<>();
+    private static final HashMap<String, JButton> buttonHashMap = new HashMap<>();
 
-    public void initializeButton() {
+    public static void initializeButton() {
         buttonHashMap.put("imgElement", new JButton("image element"));
         buttonHashMap.put("inputElement", new JButton("input element"));
         buttonHashMap.put("labelElement", new JButton("label element"));
@@ -22,7 +22,7 @@ public class Button {
             set.getValue().addActionListener(new elementButtonListener(set.getKey()));
     }
 
-    public HashMap<String, JButton> getButtonHashMap() {
+    public static HashMap<String, JButton> getButtonHashMap() {
         return buttonHashMap;
     }
 

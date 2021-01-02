@@ -45,9 +45,8 @@ public class Frame extends JFrame {
         JPanel rightPanel = new JPanel();
         setPanelColor(rightPanel);
         rightPanel.setLayout(new GridLayout(10,1));
-        Button buttons = new Button();
-        buttons.initializeButton();
-        for(Map.Entry<String, JButton> set : buttons.getButtonHashMap().entrySet()) {
+        Button.initializeButton();
+        for(Map.Entry<String, JButton> set : Button.getButtonHashMap().entrySet()) {
             rightPanel.add(set.getValue());
             editButton(set.getValue());
         }
@@ -72,7 +71,7 @@ public class Frame extends JFrame {
         centerPanel.repaint();
     }
 
-    public void editButton(JButton button) {
+    public static void editButton(JButton button) {
         button.setBackground(Color.decode("#839B97"));
         button.setForeground(Color.decode("#CFD3CE"));
         button.setFocusPainted(false);
@@ -103,7 +102,7 @@ public class Frame extends JFrame {
    	 } 
    }
 
-    public void setPanelColor(JPanel panel) {
+    public static void setPanelColor(JPanel panel) {
         panel.setBackground(Color.decode("#C6B497"));
     }
 }
