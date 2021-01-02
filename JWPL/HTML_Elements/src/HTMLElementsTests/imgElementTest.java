@@ -18,14 +18,14 @@ class imgElementTest {
 	@Test
 	void getText() {
 		String str = element.getText();
-		assertTrue(str.equals("<img src=\"1\" width=\"2px\" height=\"3px\"><br>\n"));
+		assertEquals(str, "<img src=\"1\" width=\"2px\" height=\"3px\"><br>\n");
 	}
 
 	@Test
 	void setSrc() {
 		element.setSrc("test");
 		String str = element.getText();
-		assertTrue(str.equals("<img src=\"test\" width=\"2px\" height=\"3px\"><br>\n"));
+		assertEquals(str, "<img src=\"test\" width=\"2px\" height=\"3px\"><br>\n");
 		
 	}
 
@@ -33,7 +33,7 @@ class imgElementTest {
 	void defaultSrc() {
 		element.defaultSrc(); 
 		String str = element.getText();
-		assertTrue(str.equals("<img width=\"2px\" height=\"3px\"><br>\n"));
+		assertEquals(str, "<img width=\"2px\" height=\"3px\"><br>\n");
 		 
 	 }
 
@@ -41,7 +41,7 @@ class imgElementTest {
 	 void setWidth() {
 		 element.setWidth("5");
 		 String str = element.getText();
-		 assertTrue(str.equals("<img src=\"1\" width=\"5px\" height=\"3px\"><br>\n"));
+		 assertEquals(str, "<img src=\"1\" width=\"5px\" height=\"3px\"><br>\n");
 		 
 	 }
 
@@ -49,7 +49,7 @@ class imgElementTest {
 	 void defaultWidth() {
 		element.defaultWidth(); 
 		String str = element.getText();
-		assertTrue(str.equals("<img src=\"1\" height=\"3px\"><br>\n"));
+		 assertEquals(str, "<img src=\"1\" height=\"3px\"><br>\n");
 		 
 	 }
 	 
@@ -57,7 +57,7 @@ class imgElementTest {
 	 void setHeight() {
 		 element.setHeight("10");
 		 String str = element.getText();
-		 assertTrue(str.equals("<img src=\"1\" width=\"2px\" height=\"10px\"><br>\n"));
+		 assertEquals(str, "<img src=\"1\" width=\"2px\" height=\"10px\"><br>\n");
 		 
 	 }
 
@@ -65,7 +65,7 @@ class imgElementTest {
 	 void defaultHeight() {
 		 element.defaultHeight(); 
 			String str = element.getText();
-			assertTrue(str.equals("<img src=\"1\" width=\"2px\"><br>\n"));
+		 assertEquals(str, "<img src=\"1\" width=\"2px\"><br>\n");
 		 
 	 }
 	 

@@ -22,15 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/JWPL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JWPL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_15_39__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_15_39__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_17_18__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_17_18__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/imgElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/imgElementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/inputElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/inputElementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/labelElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/labelElementTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +79,38 @@
       <recent name="HTMLElements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.inputElementTest">
+  <component name="RunManager" selected="JUnit.labelElementTest">
+    <configuration name="buttonElementTest.defaultType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HTMLElementsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.buttonElementTest" />
+      <option name="METHOD_NAME" value="defaultType" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="imgElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HTMLElementsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.imgElementTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="inputElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
@@ -99,38 +122,6 @@
       <option name="PACKAGE_NAME" value="HTMLElementsTests" />
       <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="inputElementTest.setReadonly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JWPL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="METHOD_NAME" value="setReadonly" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="inputElementTest.setRequired" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JWPL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="METHOD_NAME" value="setRequired" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,7 +142,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="inputElementTest.setRequiredTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="labelElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
@@ -160,20 +151,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="METHOD_NAME" value="setRequiredTrue" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.labelElementTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.labelElementTest" />
         <item itemvalue="JUnit.inputElementTest" />
+        <item itemvalue="JUnit.imgElementTest" />
+        <item itemvalue="JUnit.buttonElementTest.defaultType" />
         <item itemvalue="JUnit.inputElementTest.setRequiredFalse" />
-        <item itemvalue="JUnit.inputElementTest.setRequiredTrue" />
-        <item itemvalue="JUnit.inputElementTest.setRequired" />
-        <item itemvalue="JUnit.inputElementTest.setReadonly" />
       </list>
     </recent_temporary>
   </component>

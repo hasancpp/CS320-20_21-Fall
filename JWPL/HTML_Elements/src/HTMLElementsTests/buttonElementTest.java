@@ -38,7 +38,13 @@ class buttonElementTest {
         element.setDisabled(false);
         assertEquals(element.getText(), "<button type=\"2\">1</button><br>\n");
     }
-    
+
+    @Test
+    void defaultType() {
+        element.defaultType();
+        assertEquals(element.getText(), "<button>1</button><br>\n");
+    }
+
     @Test
     void setType() {
         element.setType("a type has been set");

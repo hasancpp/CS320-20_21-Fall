@@ -3,7 +3,6 @@ package HTMLElementsTests;
 import HTMLElements.Element;
 import HTMLElements.htmlFileEditor;
 import HTMLElements.pElement;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import javax.swing.filechooser.FileSystemView;
