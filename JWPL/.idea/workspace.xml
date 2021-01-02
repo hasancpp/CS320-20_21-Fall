@@ -86,12 +86,12 @@
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HTMLElements.*" />
+          <option name="PATTERN" value="HTMLElementsTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HTMLElements" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElements.aElementTest" />
+      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.aElementTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,12 +101,12 @@
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HTMLElements.*" />
+          <option name="PATTERN" value="HTMLElementsTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HTMLElements" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElements.aElementTest" />
+      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.aElementTest" />
       <option name="METHOD_NAME" value="getText" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -117,12 +117,12 @@
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HTMLElements.*" />
+          <option name="PATTERN" value="HTMLElementsTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HTMLElements" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElements.aElementTest" />
+      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.aElementTest" />
       <option name="METHOD_NAME" value="setHref" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -133,12 +133,12 @@
       <module name="JWPL" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HTMLElements.*" />
+          <option name="PATTERN" value="HTMLElementsTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HTMLElements" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElements.aElementTest" />
+      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.aElementTest" />
       <option name="METHOD_NAME" value="setText" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
