@@ -104,8 +104,8 @@ public class createButtonListener implements ActionListener {
                 default -> element = null;
             }
             HTMLElements.htmlFileEditor.addElement(element);
-            String path = Frame.path.getText();
-            if (path.equals("Path")) HTMLElements.htmlFileEditor.create(); else HTMLElements.htmlFileEditor.create(path);
         }
+        String path = Frame.path.getText();
+        if (path.equals("Path")) HTMLElements.htmlFileEditor.create(); else HTMLElements.htmlFileEditor.create(path);
     }
 }

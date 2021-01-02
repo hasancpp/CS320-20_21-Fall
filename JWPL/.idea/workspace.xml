@@ -23,13 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/JWPL.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JWPL.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_15_39__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_15_39__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_17_18__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_17_18__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/imgElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/imgElementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/inputElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/inputElementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/labelElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElementsTests/labelElementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Button_Listeners/src/ButtonListeners/createButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Button_Listeners/src/ButtonListeners/createButtonListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/htmlFileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/htmlFileEditor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,14 +76,27 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="HTMLElements" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.inputElementTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="inputElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
@@ -99,22 +108,6 @@
       <option name="PACKAGE_NAME" value="HTMLElementsTests" />
       <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="inputElementTest.setReadonly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JWPL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="METHOD_NAME" value="setReadonly" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.inputElementTest" />
         <item itemvalue="JUnit.inputElementTest.setRequiredFalse" />
         <item itemvalue="JUnit.inputElementTest.setRequiredTrue" />
         <item itemvalue="JUnit.inputElementTest.setRequired" />
-        <item itemvalue="JUnit.inputElementTest.setReadonly" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609521527120</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added more test cases">
+      <created>1609609719317</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609609719317</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,7 +226,30 @@
     <MESSAGE value="added all packages to a single project as modules" />
     <MESSAGE value="adds panel whenever the corresponding button is clicked" />
     <MESSAGE value="solved single element issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved single element issue" />
+    <MESSAGE value="added more test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="added more test cases" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1493" height="186" key="GridCell.Tab.0.bottom" timestamp="1609612223185">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609612223185" />
+    <state width="1493" height="186" key="GridCell.Tab.0.center" timestamp="1609612223184">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609612223184" />
+    <state width="1493" height="186" key="GridCell.Tab.0.left" timestamp="1609612223184">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609612223184" />
+    <state width="1493" height="186" key="GridCell.Tab.0.right" timestamp="1609612223185">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609612223185" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1609609758949">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609609758949" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

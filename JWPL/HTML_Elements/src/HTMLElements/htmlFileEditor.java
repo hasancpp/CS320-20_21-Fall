@@ -35,6 +35,7 @@ public class htmlFileEditor {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        resetFileContent();
     }
 
     public static void create(String path) {
@@ -52,5 +53,16 @@ public class htmlFileEditor {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        resetFileContent();
+    }
+
+    private static void resetFileContent() {
+        fileContent = "<!DOCTYPE html>\n" +
+                "<html>\n" +
+                "<head>\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "</body>\n" +
+                "</html>";
     }
 }
