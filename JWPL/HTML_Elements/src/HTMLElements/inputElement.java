@@ -2,44 +2,24 @@ package HTMLElements;
 
 public class inputElement implements Element {
 	private String text = "<input type=\"1\" placeholder=\"2\"><br>\n";
-	
-	
-    public inputElement(String type) {
-        setType(type);
-        defaultPlaceholder();
-        setReadonly(false);
-        setRequired(false);
-    }
-	
-    public inputElement(String type, String placeholder) {
-        setType(type);
-        setPlaceholder(placeholder);
-        setReadonly(false);
-        setRequired(false);
-    }
-    
-    public inputElement(String type, String placeholder, boolean readonly, boolean required) {
-        setType(type);
-        setPlaceholder(placeholder);
-        setReadonly(readonly);
-        setRequired(required);
-    }
 
+	//constructor
     public inputElement() {
 
     }
 
+    //other methods
     public void setReadonly(boolean readonly) {
         int index = text.indexOf(">");
         StringBuilder newString = new StringBuilder(text);
-        if (readonly) newString.insert(index, " readonly"); else text.replace(" readonly", "");
+        if (readonly) newString.insert(index, " readonly"); else text = text.replace(" readonly", "");
         text = newString.toString();
     }
     
     public void setRequired(boolean required) {
         int index = text.indexOf(">");
         StringBuilder newString = new StringBuilder(text);
-        if (required) newString.insert(index, " required"); else text.replace(" required", "");
+        if (required) newString.insert(index, " required"); else text = text.replace(" required", "");
         text = newString.toString();
     }
 
@@ -63,7 +43,4 @@ public class inputElement implements Element {
 	public String getText() {
 		return text;
 	}
-	
-	
-	
 }

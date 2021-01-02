@@ -6,11 +6,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Map;
 
-// Yamaç Demirkan Yılmaz -> v0.1
-// Nebi Peker Celik && Yamaç Demirkan Yılmaz -> v0.2
-// Contains the implementation of Frame class in Graphical User Interface package.
-
-public class Frame extends JFrame implements GraphicalUserInterface {
+public class Frame extends JFrame {
 
     public static JFrame frame;
     public static JPanel centerPanel = new JPanel();
@@ -61,10 +57,6 @@ public class Frame extends JFrame implements GraphicalUserInterface {
         frame.setLocation(dim.width/2 - frame.getSize().width/2, dim.height/2 - frame.getSize().height/2);
 
         frame.setVisible(true);
-    }
-
-    @Override
-    public void add(JComponent component) {
     }
 
     public static void addPanel(JPanel panel) {

@@ -1,22 +1,13 @@
 package HTMLElements;
 
-import java.util.ArrayList;
-
 public class olElement implements Element {
     private String text = "<ol>\n" +
             "</ol><br>\n";
 
+    //constructor
     public olElement() { }
 
-    public olElement(String item) {
-        addItem(item);
-    }
-
-    public olElement(ArrayList<String> arr) {
-        for (String item : arr)
-            addItem(item);
-    }
-
+    //other methods
     public void addItem(String item) {
         int index = text.indexOf("</ol>");
         StringBuilder newString = new StringBuilder(text);

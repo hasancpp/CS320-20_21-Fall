@@ -3,21 +3,8 @@ package HTMLElements;
 public class aElement implements Element{
     private String text = "<a href=\"1\">2</a><br>\n";
     
-    //constructors
- 
-    public aElement(String href) {
-        setHref(text);
-        setText("");
-    }
-    
-    public aElement(String href, String text) {
-    	setHref(href);
-    	setText(text);
-    }
-
-    public aElement() {
-
-    }
+    //constructor
+    public aElement() { }
 
     public void setHref(String href) {
         this.text = this.text.replace("1", href);

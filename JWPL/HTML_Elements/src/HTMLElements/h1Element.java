@@ -3,14 +3,8 @@ package HTMLElements;
 public class h1Element implements Element {
     private String text = "<h1>2</h1><br>\n";
 
-    //constructors
-    public h1Element() {
-        setText("&nbsp");
-    }
-
-    public h1Element(String text) {
-        setText(text);
-    }
+    //constructor
+    public h1Element() {    }
 
     //other methods
     @Override

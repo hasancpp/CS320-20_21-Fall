@@ -10,11 +10,7 @@ import java.util.HashMap;
 import javax.swing.*;
 import javax.swing.border.Border;
 
-// Yamaç Demirkan Yılmaz -> v0.1
-//Nebi Peker Celik && Yamaç Demirkan Yılmaz -> v0.2
-// Contains the implementation of Panel class in Graphical User Interface package.
-
-public class Panel implements GraphicalUserInterface {
+public class Panel {
     public static HashMap<String, Integer> elementIndices = new HashMap<>() {{
         put("imgElement", 0);
         put("inputElement", 1);
@@ -78,9 +74,9 @@ public class Panel implements GraphicalUserInterface {
         return checkBox;
     }
 
-    @Override
-    public void add(JComponent component) {
-
+    public static JTextField editTextField(JTextField textField, int width) {
+        textField.setColumns(width);
+        return textField;
     }
 
     public static JPanel getElementPanel(String id) {
@@ -92,7 +88,7 @@ public class Panel implements GraphicalUserInterface {
                 imgElementPanelBorder.setLayout(imgElementLayout);
 
                 JPanel imgElementPanel = new JPanel();
-                imgElementPanel.add(new JTextField("src"));
+                imgElementPanel.add(editTextField(new JTextField("src"), 20));
                 imgElementPanel.add(new JTextField("width"));
                 imgElementPanel.add(new JTextField("height"));
                 editPanel(imgElementPanel, "imgElement");
@@ -107,10 +103,9 @@ public class Panel implements GraphicalUserInterface {
                 inputElementPanelBorder.setLayout(inputElementLayout);
 
                 JPanel inputElementPanel = new JPanel();
-                inputElementPanel.add(new JTextField("type"));
-                inputElementPanel.add(new JTextField("value"));
+                inputElementPanel.add(editTextField(new JTextField("type"), 10));
                 inputElementPanel.add(editCheckBox(new JCheckBox("readonly")));
-                inputElementPanel.add(new JTextField("placeholder"));
+                inputElementPanel.add(editTextField(new JTextField("placeholder"), 10));
                 inputElementPanel.add(editCheckBox(new JCheckBox("required")));
                 editPanel(inputElementPanel, "inputElement");
                 inputElementPanel.setBorder(inputElementBorder);
@@ -124,8 +119,8 @@ public class Panel implements GraphicalUserInterface {
                 labelElementPanelBorder.setLayout(labelElementLayout);
 
                 JPanel labelElementPanel = new JPanel();
-                labelElementPanel.add(new JTextField("forinput"));
-                labelElementPanel.add(new JTextField("text"));
+                labelElementPanel.add(editTextField(new JTextField("forinput"), 10));
+                labelElementPanel.add(editTextField(new JTextField("text"), 25));
                 editPanel(labelElementPanel, "labelElement");
                 labelElementPanel.setBorder(labelElementBorder);
                 labelElementPanelBorder.add(labelElementPanel);
@@ -140,8 +135,8 @@ public class Panel implements GraphicalUserInterface {
                 JPanel buttonElementPanel = new JPanel();
                 buttonElementPanel.add(editCheckBox(new JCheckBox("autofocus")));
                 buttonElementPanel.add(editCheckBox(new JCheckBox("disabled")));
-                buttonElementPanel.add(new JTextField("type"));
-                buttonElementPanel.add(new JTextField("text"));
+                buttonElementPanel.add(editTextField(new JTextField("type"), 10));
+                buttonElementPanel.add(editTextField(new JTextField("text"), 25));
                 editPanel(buttonElementPanel, "buttonElement");
                 buttonElementPanel.setBorder(buttonElementBorder);
                 buttonElementPanelBorder.add(buttonElementPanel);
@@ -154,7 +149,7 @@ public class Panel implements GraphicalUserInterface {
                 pElementPanelBorder.setLayout(pElementLayout);
 
                 JPanel pElementPanel = new JPanel();
-                pElementPanel.add(new JTextField("text"));
+                pElementPanel.add(editTextField(new JTextField("text"), 30));
                 editPanel(pElementPanel, "pElement");
                 pElementPanel.setBorder(pElementBorder);
                 pElementPanelBorder.add(pElementPanel);
@@ -167,7 +162,8 @@ public class Panel implements GraphicalUserInterface {
                 aElementPanelBorder.setLayout(aElementLayout);
 
                 JPanel aElementPanel = new JPanel();
-                aElementPanel.add(new JTextField("href"));
+                aElementPanel.add(editTextField(new JTextField("href"), 25));
+                aElementPanel.add(editTextField(new JTextField("text"), 20));
                 editPanel(aElementPanel, "aElement");
                 aElementPanel.setBorder(aElementBorder);
                 aElementPanelBorder.add(aElementPanel);
@@ -180,7 +176,7 @@ public class Panel implements GraphicalUserInterface {
                 h1ElementPanelBorder.setLayout(h1ElementLayout);
 
                 JPanel h1ElementPanel = new JPanel();
-                h1ElementPanel.add(new JTextField("text"));
+                h1ElementPanel.add(editTextField(new JTextField("text"), 30));
                 editPanel(h1ElementPanel, "h1Element");
                 h1ElementPanel.setBorder(h1ElementBorder);
                 h1ElementPanelBorder.add(h1ElementPanel);
@@ -194,7 +190,7 @@ public class Panel implements GraphicalUserInterface {
 
                 JPanel ulElementPanel = new JPanel();
                 for(int i = 0; i < 10; i++) {
-                    ulElementPanel.add(new JTextField("item"));
+                    ulElementPanel.add(editTextField(new JTextField("item"), 5));
                 }
                 editPanel(ulElementPanel, "ulElement");
                 ulElementPanel.setBorder(ulElementBorder);
@@ -209,7 +205,7 @@ public class Panel implements GraphicalUserInterface {
 
                 JPanel olElementPanel = new JPanel();
                 for(int i = 0; i < 10; i++) {
-                    olElementPanel.add(new JTextField("item"));
+                    olElementPanel.add(editTextField(new JTextField("item"), 5));
                 }
                 editPanel(olElementPanel, "olElement");
                 olElementPanel.setBorder(olElementBorder);

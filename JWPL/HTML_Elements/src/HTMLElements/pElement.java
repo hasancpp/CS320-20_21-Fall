@@ -3,13 +3,8 @@ package HTMLElements;
 public class pElement implements Element {
     private String text = "<p>1</p><br>\n";
 
-    //constructors
+    //constructor
     public pElement() {
-        setText("&nbsp");
-    }
-
-    public pElement(String text) {
-        setText(text);
     }
 
     //other methods

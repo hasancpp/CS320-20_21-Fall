@@ -3,21 +3,8 @@ package HTMLElements;
 public class labelElement implements Element {
     private String text = "<label for=\"2\">1</label><br>\n";
 
-    //constructors
-    public labelElement() {
-        setText("");
-        defaultLabel();
-    }
-
-    public labelElement(String text) {
-        setText(text);
-        defaultLabel();
-    }
-
-    public labelElement(String text, String forinput) {
-        setText(text);
-        setFor(forinput);
-    }
+    //constructor
+    public labelElement() {}
 
     //other methods
     public String getText() {
@@ -32,7 +19,7 @@ public class labelElement implements Element {
         this.text = this.text.replace("2", text);
     }
 
-    public void defaultLabel() {
+    public void defaultFor() {
         this.text = this.text.replace(" for=\"2\"", "");
     }
 }

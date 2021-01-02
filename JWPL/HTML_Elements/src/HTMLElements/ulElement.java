@@ -1,22 +1,13 @@
 package HTMLElements;
 
-import java.util.ArrayList;
-
 public class ulElement implements Element {
     private String text = "<ul>\n" +
             "</ul><br>\n";
 
+    //constructor
     public ulElement() { }
 
-    public ulElement(String item) {
-        addItem(item);
-    }
-
-    public ulElement(ArrayList<String> arr) {
-        for (String item : arr)
-            addItem(item);
-    }
-
+    //other methods
     public void addItem(String item) {
         int index = text.indexOf("</ul>");
         StringBuilder newString = new StringBuilder(text);
