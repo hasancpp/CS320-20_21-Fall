@@ -15,10 +15,21 @@ class inputElementTest {
 	
 	@Test
 	void setReadonly() {
-		
+		element.setReadonly(true);
+		String str = element.getText();
+		assertTrue(str.equals("<img width=\"2px\" height=\"3px\" readonly><br>\n"));
+		element.setReadonly(false);
+		str = element.getText();
+		assertTrue(str.equals("<img width=\"2px\" height=\"3px\"><br>\n"));
 	}
 	
 	void setRequired() {
+		element.setRequired(true);
+		String str = element.getText();
+		assertTrue(str.equals("<img width=\"2px\" height=\"3px\" required><br>\n"));
+		element.setRequired(false);
+		str = element.getText();
+		assertTrue(str.equals("<img width=\"2px\" height=\"3px\"><br>\n"));
 		
 	}
 	
