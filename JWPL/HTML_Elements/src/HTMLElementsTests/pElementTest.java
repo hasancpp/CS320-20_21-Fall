@@ -1,5 +1,6 @@
-package HTMLElements;
+package HTMLElementsTests;
 
+import HTMLElements.pElement;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class pElementTest {
 
-    private pElement pElement;
+    private HTMLElements.pElement pElement;
 
     @BeforeEach
     void setUp() {
@@ -16,12 +17,12 @@ class pElementTest {
 
     @Test
     void getText() {
-        assertTrue(pElement.getText().equals("<p>1</p><br>\n"));
+        assertEquals(pElement.getText(), "<p>1</p><br>\n");
     }
 
     @Test
     void setText() {
         pElement.setText("text");
-        assertTrue(pElement.getText().equals("<p>text</p><br>\n"));
+        assertEquals(pElement.getText(), "<p>text</p><br>\n");
     }
 }

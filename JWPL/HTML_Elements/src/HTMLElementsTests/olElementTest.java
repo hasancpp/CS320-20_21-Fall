@@ -1,5 +1,6 @@
-package HTMLElements;
+package HTMLElementsTests;
 
+import HTMLElements.olElement;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -7,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class olElementTest {
 
-    private olElement olElement;
+    private HTMLElements.olElement olElement;
 
     @BeforeEach
     void setUp() {
@@ -17,14 +18,14 @@ class olElementTest {
     @Test
     void addItem() {
         olElement.addItem("item");
-        assertTrue(olElement.getText().equals("<ol>\n" +
+        assertEquals("<ol>\n" +
                 "<li>item</li>\n" +
-                "</ol><br>\n"));
+                "</ol><br>\n", olElement.getText());
     }
 
     @Test
     void getText() {
-        assertTrue(olElement.getText().equals("<ol>\n" +
-                "</ol><br>\n"));
+        assertEquals("<ol>\n" +
+                "</ol><br>\n", olElement.getText());
     }
 }
