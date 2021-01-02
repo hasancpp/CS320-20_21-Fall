@@ -15,6 +15,10 @@ public class aElement implements Element{
     	setText(text);
     }
 
+    public aElement() {
+
+    }
+
     public void setHref(String href) {
         this.text = this.text.replace("1", href);
     }

@@ -1,5 +1,7 @@
 package GraphicalUserInterface;
 
+import ButtonListeners.createButtonListener;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Map;
@@ -11,7 +13,8 @@ import java.util.Map;
 public class Frame extends JFrame implements GraphicalUserInterface {
 
     public static JFrame frame;
-    private static JPanel centerPanel = new JPanel();
+    public static JPanel centerPanel = new JPanel();
+    public static JTextField path;
 
     public Frame() {
         frame = new JFrame("JWPL Software");
@@ -22,7 +25,7 @@ public class Frame extends JFrame implements GraphicalUserInterface {
 
         JPanel topPanel = new JPanel();
         setPanelColor(topPanel);
-        JTextField path = new JTextField("Path");
+        path = new JTextField("Path");
         path.setColumns(40);
         topPanel.add(path);
         frame.add(topPanel, BorderLayout.NORTH);
@@ -31,17 +34,13 @@ public class Frame extends JFrame implements GraphicalUserInterface {
         setPanelColor(centerPanel);
         Panel panels = new Panel();
         panels.initializePanels();
-        /*
-        for(Map.Entry<String, JPanel> set : panels.getPanels().entrySet()) {
-            centerPanel.add(set.getValue());
-        }
-        */
         frame.add(centerPanel, BorderLayout.CENTER);
 
         JPanel bottomPanel = new JPanel();
         setPanelColor(bottomPanel);
         bottomPanel.setLayout(new BorderLayout());
         JButton createButton = new JButton("Create");
+        createButton.addActionListener(new createButtonListener());
         bottomPanel.add(createButton, BorderLayout.EAST);
         createButton.setMargin(new Insets(30, 55, 30, 55));
         editButton(createButton);

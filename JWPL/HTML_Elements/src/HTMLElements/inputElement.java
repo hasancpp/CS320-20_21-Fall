@@ -25,6 +25,10 @@ public class inputElement implements Element {
         setRequired(required);
     }
 
+    public inputElement() {
+
+    }
+
     public void setReadonly(boolean readonly) {
         int index = text.indexOf(">");
         StringBuilder newString = new StringBuilder(text);

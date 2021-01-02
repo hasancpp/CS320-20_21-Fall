@@ -9,7 +9,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class htmlFileEditor {
-     protected static String fileContent = "<!DOCTYPE html>\n" +
+     public static String fileContent = "<!DOCTYPE html>\n" +
             "<html>\n" +
             "<head>\n" +
             "</head>\n" +

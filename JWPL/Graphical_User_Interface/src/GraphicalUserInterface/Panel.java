@@ -98,6 +98,7 @@ public class Panel implements GraphicalUserInterface {
                 editPanel(imgElementPanel, "imgElement");
                 imgElementPanel.setBorder(imgElementBorder);
                 imgElementPanelBorder.add(imgElementPanel);
+                imgElementPanel.setName("imgElement");
                 return imgElementPanel;
             case "inputElement":
                 Border inputElementBorder = BorderFactory.createTitledBorder("inputElement");
@@ -114,6 +115,7 @@ public class Panel implements GraphicalUserInterface {
                 editPanel(inputElementPanel, "inputElement");
                 inputElementPanel.setBorder(inputElementBorder);
                 inputElementPanelBorder.add(inputElementPanel);
+                inputElementPanel.setName("inputElement");
                 return inputElementPanel;
             case "labelElement":
                 Border labelElementBorder = BorderFactory.createTitledBorder("labelElement");
@@ -127,6 +129,7 @@ public class Panel implements GraphicalUserInterface {
                 editPanel(labelElementPanel, "labelElement");
                 labelElementPanel.setBorder(labelElementBorder);
                 labelElementPanelBorder.add(labelElementPanel);
+                labelElementPanel.setName("labelElement");
                 return labelElementPanel;
             case "buttonElement":
                 Border buttonElementBorder = BorderFactory.createTitledBorder("buttonElement");
@@ -142,6 +145,7 @@ public class Panel implements GraphicalUserInterface {
                 editPanel(buttonElementPanel, "buttonElement");
                 buttonElementPanel.setBorder(buttonElementBorder);
                 buttonElementPanelBorder.add(buttonElementPanel);
+                buttonElementPanel.setName("buttonElement");
                 return buttonElementPanel;
             case "pElement":
                 Border pElementBorder = BorderFactory.createTitledBorder("pElement");
@@ -154,6 +158,7 @@ public class Panel implements GraphicalUserInterface {
                 editPanel(pElementPanel, "pElement");
                 pElementPanel.setBorder(pElementBorder);
                 pElementPanelBorder.add(pElementPanel);
+                pElementPanel.setName("pElement");
                 return pElementPanel;
             case "aElement":
                 Border aElementBorder = BorderFactory.createTitledBorder("aElement");
@@ -166,6 +171,7 @@ public class Panel implements GraphicalUserInterface {
                 editPanel(aElementPanel, "aElement");
                 aElementPanel.setBorder(aElementBorder);
                 aElementPanelBorder.add(aElementPanel);
+                aElementPanel.setName("aElement");
                 return aElementPanel;
             case "h1Element":
                 Border h1ElementBorder = BorderFactory.createTitledBorder("h1Element");
@@ -178,6 +184,7 @@ public class Panel implements GraphicalUserInterface {
                 editPanel(h1ElementPanel, "h1Element");
                 h1ElementPanel.setBorder(h1ElementBorder);
                 h1ElementPanelBorder.add(h1ElementPanel);
+                h1ElementPanel.setName("h1Element");
                 return h1ElementPanel;
             case "ulElement":
                 Border ulElementBorder = BorderFactory.createTitledBorder("ulElement");
@@ -192,6 +199,7 @@ public class Panel implements GraphicalUserInterface {
                 editPanel(ulElementPanel, "ulElement");
                 ulElementPanel.setBorder(ulElementBorder);
                 ulElementPanelBorder.add(ulElementPanel);
+                ulElementPanel.setName("ulElement");
                 return ulElementPanel;
             case "olElement":
                 Border olElementBorder = BorderFactory.createTitledBorder("olElement");
@@ -206,6 +214,7 @@ public class Panel implements GraphicalUserInterface {
                 editPanel(olElementPanel, "olElement");
                 olElementPanel.setBorder(olElementBorder);
                 olElementPanelBorder.add(olElementPanel);
+                olElementPanel.setName("olElement");
                 return olElementPanel;
             default:
                 return null;
