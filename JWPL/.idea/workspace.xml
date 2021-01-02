@@ -74,14 +74,7 @@
       <recent name="HTMLElements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.aElementTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Main" />
-      <module name="JWPL" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.buttonElementTest">
     <configuration name="aElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
@@ -113,22 +106,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="aElementTest.setHref" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JWPL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HTMLElements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HTMLElements" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElements.aElementTest" />
-      <option name="METHOD_NAME" value="setHref" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="aElementTest.setText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JWPL" />
       <extension name="coverage">
@@ -145,13 +122,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="buttonElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HTMLElements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HTMLElements" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElements.buttonElementTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="h1ElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HTMLElements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HTMLElements" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElements.h1ElementTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.buttonElementTest" />
+        <item itemvalue="JUnit.h1ElementTest" />
         <item itemvalue="JUnit.aElementTest" />
         <item itemvalue="JUnit.aElementTest.getText" />
         <item itemvalue="JUnit.aElementTest.setText" />
-        <item itemvalue="JUnit.aElementTest.setHref" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
