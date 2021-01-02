@@ -36,12 +36,33 @@ public class createButtonListener implements ActionListener {
                     break;
                 case "pElement":
                     element = new pElement();
+                    String text = ((JTextField) panel.getComponent(0)).getText();
+                    if(text.equals("text")) {
+                        ((pElement) element).setText("");
+                    }
+                    else {
+                        ((pElement) element).setText(text);
+                    }
                     break;
                 case "aElement":
                     element = new aElement();
+                    String href = ((JTextField) panel.getComponent(0)).getText();
+                    if(href.equals("href")) {
+                        ((aElement) element).setHref("");
+                    }
+                    else {
+                        ((aElement) element).setHref(href);
+                    }
                     break;
                 case "h1Element":
                     element = new h1Element();
+                    String txt = ((JTextField) panel.getComponent(0)).getText();
+                    if(txt.equals("text")) {
+                        ((h1Element) element).setText("");
+                    }
+                    else {
+                        ((h1Element) element).setText(txt);
+                    }
                     break;
                 case "ulElement":
                     element = new ulElement();

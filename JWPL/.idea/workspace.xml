@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/aElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/aElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/htmlFileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/htmlFileEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/imgElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/imgElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/inputElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/inputElement.java" afterDir="false" />
-    </list>
+    <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,75 +121,5 @@
     <MESSAGE value="adds panel whenever the corresponding button is clicked" />
     <MESSAGE value="solved single element issue" />
     <option name="LAST_COMMIT_MESSAGE" value="solved single element issue" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="249" y="0" key="#Project_Structure" timestamp="1609513917122">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1609513917122" />
-    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609513796294">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1609513796294" />
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1609579120477">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="574" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1609579120477" />
-    <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1609424872643">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="188" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1609424872643" />
-    <state x="76" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1609513771467">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="76" y="201" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1609513771467" />
-    <state x="599" y="106" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1609424146151">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="599" y="106" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1536.824@0.0.1536.824" timestamp="1609424146151" />
-    <state x="474" y="264" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1609425002808">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="474" y="264" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1609425002808" />
-    <state x="564" y="307" key="DetectedRootsChooserDialog" timestamp="1609424122640">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="564" y="307" key="DetectedRootsChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1609424122640" />
-    <state x="473" y="153" key="FileChooserDialogImpl" timestamp="1609513913449">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="473" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609513913449" />
-    <state width="1493" height="125" key="GridCell.Tab.0.bottom" timestamp="1609582220346">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609582220346" />
-    <state width="1493" height="125" key="GridCell.Tab.0.center" timestamp="1609582220345">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609582220345" />
-    <state width="1493" height="125" key="GridCell.Tab.0.left" timestamp="1609582220345">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609582220345" />
-    <state width="1493" height="125" key="GridCell.Tab.0.right" timestamp="1609582220346">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609582220346" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1609513842098">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609513842098" />
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2" timestamp="1609521531678">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="132" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609521531678" />
-    <state x="209" y="32" key="new project wizard" timestamp="1609513639796">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="209" y="32" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1609513639796" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1609581361515">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1609581361515" />
   </component>
 </project>
