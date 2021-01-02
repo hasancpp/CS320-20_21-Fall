@@ -19,7 +19,7 @@ public class downButtonListener implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
-		Frame.swapDown(Panel.panels.get(Panel.elementIndices.get(id)).get(0));
+		Frame.swapDown(Panel.panels.get(Panel.elementIndices.get(id)).get(index));
 	}
 
 }
