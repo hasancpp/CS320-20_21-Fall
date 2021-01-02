@@ -19,23 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Button_Listeners/src/ButtonListeners/createButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/Button_Listeners/src/ButtonListeners/createButtonListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/GraphicalUserInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Panel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Graphical_User_Interface/src/GraphicalUserInterface/Panel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/aElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/aElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/buttonElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/buttonElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/h1Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/h1Element.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/htmlFileEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/htmlFileEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/inputElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/inputElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/labelElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/labelElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/olElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/olElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/pElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/pElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/ulElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/HTML_Elements/src/HTMLElements/ulElement.java" afterDir="false" />
-    </list>
+    <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -67,13 +52,29 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/HTML_Elements/src/HTMLElements" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="HTMLElements" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.aElementTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="JWPL" />
@@ -81,8 +82,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="aElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HTMLElements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HTMLElements" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElements.aElementTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aElementTest.getText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HTMLElements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HTMLElements" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElements.aElementTest" />
+      <option name="METHOD_NAME" value="getText" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aElementTest.setHref" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HTMLElements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HTMLElements" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElements.aElementTest" />
+      <option name="METHOD_NAME" value="setHref" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="aElementTest.setText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HTMLElements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HTMLElements" />
+      <option name="MAIN_CLASS_NAME" value="HTMLElements.aElementTest" />
+      <option name="METHOD_NAME" value="setText" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.aElementTest" />
+        <item itemvalue="JUnit.aElementTest.getText" />
+        <item itemvalue="JUnit.aElementTest.setText" />
+        <item itemvalue="JUnit.aElementTest.setHref" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -137,27 +205,5 @@
     <MESSAGE value="adds panel whenever the corresponding button is clicked" />
     <MESSAGE value="solved single element issue" />
     <option name="LAST_COMMIT_MESSAGE" value="solved single element issue" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="42" y="0" key="#org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinOverridingDialog" timestamp="1609593414484">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="42" y="0" key="#org.jetbrains.kotlin.idea.refactoring.safeDelete.KotlinOverridingDialog/0.0.1536.824@0.0.1536.824" timestamp="1609593414484" />
-    <state width="1493" height="125" key="GridCell.Tab.0.bottom" timestamp="1609594197658">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609594197658" />
-    <state width="1493" height="125" key="GridCell.Tab.0.center" timestamp="1609594197658">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609594197658" />
-    <state width="1493" height="125" key="GridCell.Tab.0.left" timestamp="1609594197658">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609594197658" />
-    <state width="1493" height="125" key="GridCell.Tab.0.right" timestamp="1609594197658">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="125" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609594197658" />
   </component>
 </project>
