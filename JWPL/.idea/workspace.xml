@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -22,11 +25,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="" />
+    <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../3.Software Test Report.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4.Software Analysis Report.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS320_Fall2020_Project_GUI/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\HP\Desktop" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -65,10 +77,11 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/HTML_Elements/src/HTMLElements" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
@@ -79,7 +92,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.htmlFileEditorTest.resetFileContent">
+  <component name="RunManager" selected="JUnit.All in JWPL (2)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="JWPL" />
@@ -89,6 +102,30 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in JWPL (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in JWPL (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in JWPL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JWPL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -109,60 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="inputElementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JWPL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="inputElementTest.setRequiredFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JWPL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="METHOD_NAME" value="setRequiredFalse" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="inputElementTest.setRequiredTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JWPL" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HTMLElementsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HTMLElementsTests" />
-      <option name="MAIN_CLASS_NAME" value="HTMLElementsTests.inputElementTest" />
-      <option name="METHOD_NAME" value="setRequiredTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.htmlFileEditorTest.resetFileContent" />
+        <item itemvalue="JUnit.All in JWPL (2)" />
+        <item itemvalue="JUnit.All in JWPL (1)" />
+        <item itemvalue="JUnit.All in JWPL" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.inputElementTest" />
-        <item itemvalue="JUnit.inputElementTest.setRequiredFalse" />
-        <item itemvalue="JUnit.inputElementTest.setRequiredTrue" />
+        <item itemvalue="JUnit.htmlFileEditorTest.resetFileContent" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609612504718</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added a new unit test">
+      <created>1609664765934</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609664765934</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,32 +228,53 @@
     <MESSAGE value="solved single element issue" />
     <MESSAGE value="added more test cases" />
     <MESSAGE value="fixed some errors with Yamaç Demirkan Yılmaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some errors with Yamaç Demirkan Yılmaz" />
+    <MESSAGE value="added a new unit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a new unit test" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="186" key="GridCell.Tab.0.bottom" timestamp="1609612529881">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1609665093317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609612529881" />
-    <state width="1493" height="186" key="GridCell.Tab.0.center" timestamp="1609612529880">
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1609665093317" />
+    <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1609665032643">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609612529880" />
-    <state width="1493" height="186" key="GridCell.Tab.0.left" timestamp="1609612529879">
+    <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1609665032643" />
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1609665610015">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609612529879" />
-    <state width="1493" height="186" key="GridCell.Tab.0.right" timestamp="1609612529881">
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609665610015" />
+    <state width="1493" height="186" key="GridCell.Tab.0.bottom" timestamp="1609667043767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609612529881" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1609612507958">
+    <state width="1493" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609667043767" />
+    <state width="1493" height="186" key="GridCell.Tab.0.center" timestamp="1609667043767">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609612507958" />
+    <state width="1493" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609667043767" />
+    <state width="1493" height="186" key="GridCell.Tab.0.left" timestamp="1609667043767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609667043767" />
+    <state width="1493" height="186" key="GridCell.Tab.0.right" timestamp="1609667043767">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609667043767" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1609664774028">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609664774028" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JWPL$Main.ic" NAME="Main Coverage Results" MODIFIED="1609664996550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Main.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/JWPL$All_in_JWPL__2_.ic" NAME="All in JWPL (2) Coverage Results" MODIFIED="1609666996758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/JWPL$All_in_JWPL__1_.ic" NAME="All in JWPL (1) Coverage Results" MODIFIED="1609666965922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/JWPL$All_in_JWPL.ic" NAME="All in JWPL Coverage Results" MODIFIED="1609665118929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
