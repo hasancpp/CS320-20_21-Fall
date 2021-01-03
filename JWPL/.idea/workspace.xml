@@ -26,9 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd092a07-d512-4642-ad4f-1d4660d9729d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../3.Software Test Report.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../4.Software Analysis Report.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CS320_Fall2020_Project_GUI/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4.Software-Analysis-Report.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../4.Software-Analysis-Report.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_19_54__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_01_2021_19_54__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,13 +37,13 @@
   </component>
   <component name="ExportToHTMLSettings">
     <option name="OPEN_IN_BROWSER" value="true" />
-    <option name="OUTPUT_DIRECTORY" value="C:\Users\HP\Desktop" />
+    <option name="OUTPUT_DIRECTORY" value="C:\Users\Alpha\Desktop\DependencyFinder-1.2.1-beta5" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -77,12 +76,12 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/HTML_Elements/src/HTMLElements" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/jdepend" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -92,7 +91,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in JWPL (2)">
+  <component name="RunManager" selected="JUnit.All in JWPL">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
       <module name="JWPL" />
@@ -231,50 +230,16 @@
     <MESSAGE value="added a new unit test" />
     <option name="LAST_COMMIT_MESSAGE" value="added a new unit test" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="249" y="0" key="#Project_Structure" timestamp="1609665093317">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1609665093317" />
-    <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1609665032643">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="516" y="267" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1609665032643" />
-    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1609665610015">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609665610015" />
-    <state width="1493" height="186" key="GridCell.Tab.0.bottom" timestamp="1609667043767">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1609667043767" />
-    <state width="1493" height="186" key="GridCell.Tab.0.center" timestamp="1609667043767">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1609667043767" />
-    <state width="1493" height="186" key="GridCell.Tab.0.left" timestamp="1609667043767">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1609667043767" />
-    <state width="1493" height="186" key="GridCell.Tab.0.right" timestamp="1609667043767">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1609667043767" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1609664774028">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1609664774028" />
-  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JWPL$All_in_JWPL__1_.ic" NAME="All in JWPL (1) Coverage Results" MODIFIED="1609666965922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/JWPL$Main.ic" NAME="Main Coverage Results" MODIFIED="1609664996550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Main.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/JWPL$All_in_JWPL__2_.ic" NAME="All in JWPL (2) Coverage Results" MODIFIED="1609666996758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/JWPL$All_in_JWPL__1_.ic" NAME="All in JWPL (1) Coverage Results" MODIFIED="1609666965922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/JWPL$All_in_JWPL.ic" NAME="All in JWPL Coverage Results" MODIFIED="1609665118929" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
