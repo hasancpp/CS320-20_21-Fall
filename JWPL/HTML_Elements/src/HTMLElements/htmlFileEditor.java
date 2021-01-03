@@ -56,7 +56,7 @@ public class htmlFileEditor {
         resetFileContent();
     }
 
-    private static void resetFileContent() {
+    public static void resetFileContent() {
         fileContent = "<!DOCTYPE html>\n" +
                 "<html>\n" +
                 "<head>\n" +

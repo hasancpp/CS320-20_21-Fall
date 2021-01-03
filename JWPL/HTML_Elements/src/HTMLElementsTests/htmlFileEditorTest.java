@@ -35,4 +35,17 @@ class htmlFileEditorTest {
         assertTrue(f.exists());
         f.delete();
     }
+
+    @Test
+    void resetFileContent() {
+        htmlFileEditor.fileContent = "changing the content for test purposes";
+        htmlFileEditor.resetFileContent();
+        assertEquals("<!DOCTYPE html>\n" +
+                "<html>\n" +
+                "<head>\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "</body>\n" +
+                "</html>", htmlFileEditor.fileContent);
+    }
 }
